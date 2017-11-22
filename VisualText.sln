@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VisualText", "VisualText.vcxproj", "{1CF07362-37B3-42FA-9798-CC627493302B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{0A936D06-F627-4EF5-8A11-43340926ED8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_QDBM|x86 = Debug_QDBM|x86
+		Debug|x86 = Debug|x86
+		DebugDynStat|x86 = DebugDynStat|x86
+		Release_QDBM|x86 = Release_QDBM|x86
+		Release|x86 = Release|x86
+		ReleaseDynStat|x86 = ReleaseDynStat|x86
+		Unicode_Debug|x86 = Unicode_Debug|x86
+		Unicode_DebugDynStat|x86 = Unicode_DebugDynStat|x86
+		Unicode_Release|x86 = Unicode_Release|x86
+		Unicode_ReleaseDynStat|x86 = Unicode_ReleaseDynStat|x86
+		VisualText_QDBM|x86 = VisualText_QDBM|x86
+		VisualText_QDBMR|x86 = VisualText_QDBMR|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Debug_QDBM|x86.ActiveCfg = Debug_QDBM|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Debug_QDBM|x86.Build.0 = Debug_QDBM|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Debug|x86.ActiveCfg = Debug|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Debug|x86.Build.0 = Debug|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.DebugDynStat|x86.ActiveCfg = DebugDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.DebugDynStat|x86.Build.0 = DebugDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Release_QDBM|x86.ActiveCfg = Release_QDBM|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Release_QDBM|x86.Build.0 = Release_QDBM|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Release|x86.ActiveCfg = Release|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Release|x86.Build.0 = Release|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.ReleaseDynStat|x86.ActiveCfg = ReleaseDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.ReleaseDynStat|x86.Build.0 = ReleaseDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_Debug|x86.ActiveCfg = Unicode_Debug|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_Debug|x86.Build.0 = Unicode_Debug|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_DebugDynStat|x86.ActiveCfg = Unicode_DebugDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_DebugDynStat|x86.Build.0 = Unicode_DebugDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_Release|x86.ActiveCfg = Unicode_Release|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_Release|x86.Build.0 = Unicode_Release|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_ReleaseDynStat|x86.ActiveCfg = Unicode_ReleaseDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.Unicode_ReleaseDynStat|x86.Build.0 = Unicode_ReleaseDynStat|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.VisualText_QDBM|x86.ActiveCfg = VisualText_QDBM|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.VisualText_QDBM|x86.Build.0 = VisualText_QDBM|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.VisualText_QDBMR|x86.ActiveCfg = VisualText_QDBMR|Win32
+		{1CF07362-37B3-42FA-9798-CC627493302B}.VisualText_QDBMR|x86.Build.0 = VisualText_QDBMR|Win32
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Debug_QDBM|x86.ActiveCfg = Debug
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Debug|x86.ActiveCfg = Debug
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.DebugDynStat|x86.ActiveCfg = Debug
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Release_QDBM|x86.ActiveCfg = Release
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Release|x86.ActiveCfg = Release
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.ReleaseDynStat|x86.ActiveCfg = Release
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Unicode_Debug|x86.ActiveCfg = Debug
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Unicode_DebugDynStat|x86.ActiveCfg = Debug
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Unicode_Release|x86.ActiveCfg = Release
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.Unicode_ReleaseDynStat|x86.ActiveCfg = Release
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.VisualText_QDBM|x86.ActiveCfg = Release
+		{0A936D06-F627-4EF5-8A11-43340926ED8B}.VisualText_QDBMR|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

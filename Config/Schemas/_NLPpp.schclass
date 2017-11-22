@@ -1,0 +1,480 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+//      lexClass:
+//              name            = c_NLPpp
+//              parent          = c_NLPpp
+//              parent:file = <*.pat>      
+//
+//              children                = 0
+//              children                = class1, class2, ...
+//
+//              previous:class                  =       
+//              previous:tag                    =       
+//              previous:tag:separators =       
+//
+//              start:class             = 
+//              start:Tag               = '"'
+//
+//              skip:Tag                = '\"'
+//
+//              end:class               = //
+//              end:Tag                 = '"'
+//              end:separators  = ' '
+//
+//              Token:tag               = 'if', 'for', 'while', 'do'
+//              Token:start:separators  = 
+//              Token:end:separators    = 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//      txt:colorFG     = 0xffc0c0 // color value in hex format. default: black 
+//      txt:colorBK     = 0xffc0c0 // color value in hex format. default: white         
+//
+//      txt:colorSelFG  = 0xffc0c0 // color value in hex format. default: white
+//      txt:colorSelBK  = 0xffc0c0 // color value in hex format. default: black
+//
+//      txt:Bold        = 1 // {1,0} default: 0
+//      txt:Italic      = 1 // {1,0} default: 0
+//      txt:Underline   = 1 // {1,0} default: 0
+//
+//      caseSensitive   = 1 // {1,0} default: 0
+//
+//      Collapsable     = 1 // {1,0} default: 0
+//      CollapsedText   = '/*...*/' // quoted string value. default: '[..]'     
+//
+//      ParseOnScreen   = 1 // {1,0} default: 0
+//      
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+//      global:FirstParseInSeparateThread       = 1             // {0,1} default=1
+//      global:EditReparceInSeparateThread      = 1             // {0,1} default=1
+//      global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+//      global:EditReparceTimeout_ms    = 500           // default= 500 ms; time out for start reparse after last key was pressed.
+//      global:MaxBackParseOffset               = 100           // default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+//      global:OnScreenSchCacheLifeTime_sec = 180       // default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+//      global:ParserThreadIdleLifeTime_sec = 60        // default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+        
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha       = a-z, A-Z
+// @digit       = 0-9
+// @HexDdigit   = 0-9, a-f, A-F
+// @specs       = "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL         = End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+lexClass:
+	parent:file		= <*.pat>
+	name			= c_NLPpp
+	caseSensitive	= 0
+	txt:colorFG	= 0x000000
+	global:EditReparceInSeparateThread	= 1
+	DisplayName = 'Normal Text'
+	
+lexClass: 	
+	name		= c_NLPppBracketBlock
+	parent:dyn	= c_NLPpp, c_NLPppBracketBlock
+	start:Tag	= '['
+	end:tag		= ']'
+	Collapsable	= 1 
+	CollapsedText	= '...'
+	DisplayName		= 'Brackets'
+
+lexClass:  
+	name		= c_NLPppRegionWord
+	parent:dyn	= c_NLPpp, c_NLPppBracketBlock
+	children	= 0
+	txt:colorFG	= 0x0000FF
+	start:tag	= '@'	
+	end:tag		= @eol
+	DisplayName = 'Region'
+	txt:Bold	= 1
+		
+lexClass:  
+	name		= c_NLPppComment
+	parent		= c_NLPpp, c_NLPppBracketBlock
+	children	= 0
+	start:tag	= '#'	
+	end:tag		= @eol
+	txt:colorFG	= 0x00A000
+	DisplayName = 'Comments'
+
+lexClass: 	
+	name			= c_String	
+	parent:dyn		= c_NLPpp, c_NLPppBracketBlock
+	start:Tag		= '"'
+	skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '"', @eol
+	txt:colorFG		= 0xFF00FF
+	DisplayName		= 'String (Double Quotes)'
+	
+lexClass:	
+	name			= c_NPLppNode
+	parent			= c_NLPpp
+	children		= 0
+	previous:tag	= '(','!','+',' ','\t'
+	end:separators	= '('
+	txt:colorFG		= 0xFF0000
+	txt:Bold		= 1
+	DisplayName		= 'Constant'	
+	
+	token:tag	= 'G'
+	token:tag	= 'N'
+	token:tag	= 'X'
+	token:tag	= 'L'
+	token:tag	= 'L'
+		
+lexClass:	
+	name			= c_NPLppConstant
+	parent:Dyn		= c_NLPpp, c_NLPppBracketBlock
+	children		= 0
+	txt:colorFG		= 0xFF0000
+	txt:Bold		= 1
+	DisplayName		= 'X Constants'	
+	
+	token:tag	= '_xNIL'
+	token:tag	= '_xWILD'
+	token:tag	= '_xALPHA'
+	token:tag	= '_xNUM'
+	token:tag	= '_xWHITE'
+	token:tag	= '_xSTART'
+	token:tag	= '_xEND'
+	token:tag	= '_xANY'
+	token:tag	= '_xPUNCT'
+	token:tag	= '_xBLANK'
+	token:tag	= '_xEOF'
+	token:tag	= '_xCAP'
+	token:tag	= '_xCTRL'
+	token:tag	= '_xCAPLET'	// 07/10/09 AM.
+	token:tag	= '_xLET'		// 07/10/09 AM.
+
+lexClass:	
+	name			= c_NPLppKeywords
+	parent:Dyn		= c_NLPpp, c_NLPppBracketBlock
+	children		= 0
+	txt:colorFG		= 0x770077
+	txt:Bold = 1
+	DisplayName		= 'Keyword'
+
+	token:tag	= 'addarg'
+	token:tag	= 'addattr'
+	token:tag	= 'addcnode'
+	token:tag	= 'addconcept'
+	token:tag	= 'addconval'
+	token:tag	= 'addnode'
+	token:tag	= 'addnumval'
+	token:tag	= 'addstmt'
+	token:tag	= 'addstrs'
+	token:tag	= 'addstrval'
+	token:tag	= 'addsval'
+	token:tag	= 'addword'
+	token:tag	= 'arraylength'
+	token:tag	= 'attrchange'
+	token:tag	= 'attrexists'
+	token:tag	= 'attrname'
+	token:tag	= 'attrvals'
+	token:tag	= 'attrwithval'
+	token:tag	= 'batchstart'
+	token:tag	= 'cap'
+	token:tag	= 'cbuf'	// 05/11/02 AM.
+	token:tag	= 'closefile'
+	token:tag	= 'conceptname'
+	token:tag	= 'conceptpath'
+	token:tag	= 'conval'
+	token:tag	= 'cout'	// 05/05/02 AM.
+	token:tag	= 'coutreset'	// 05/05/02 AM.
+	token:tag	= 'dballocstmt'	// 06/06/02 DD.
+	token:tag	= 'dbbindcol'	// 06/06/02 DD.
+	token:tag	= 'dbclose'	// 06/06/02 DD.
+	token:tag	= 'dbexec'	// 06/06/02 DD.
+	token:tag	= 'dbexecstmt'	// 06/06/02 DD.
+	token:tag	= 'dbfetch'	// 06/06/02 DD.
+	token:tag	= 'dbfreestmt'	// 06/06/02 DD.
+	token:tag	= 'dbopen'	// 06/06/02 DD.
+	token:tag	= 'deaccent'		// 09/07/03 AM.
+	token:tag	= 'debug'
+	token:tag	= 'dictfindword'
+	token:tag	= 'dictfirst'	// 03/21/03 AM.
+	token:tag	= 'dictgetword'	// 06/29/03 AM.
+	token:tag	= 'dictnext'		// 03/21/03 AM.
+	token:tag	= 'down'
+	token:tag	= 'else'
+	token:tag	= 'eltnode'		// 09/12/06 AM.
+	token:tag	= 'excise'
+	token:tag	= 'exitpass'
+	token:tag	= 'exittopopup'	// 02/20/03 AM.
+	token:tag	= 'factorial'	// Fix.	// 06/23/03 AM.
+	token:tag	= 'fail'
+	token:tag	= 'fileout'
+	token:tag	= 'findana'			// 04/30/03 AM.
+	token:tag	= 'findattr'
+	token:tag	= 'findattrs'
+	token:tag	= 'findconcept'
+	token:tag	= 'findhierconcept'
+	token:tag	= 'findnode'
+	token:tag	= 'findphrase'
+	token:tag	= 'findroot'
+	token:tag	= 'findvals'
+	token:tag	= 'findwordpath'
+	token:tag	= 'firstnode'
+	token:tag	= 'flt'				// 12/21/01 AM.
+	token:tag	= 'fltval'			// 12/27/06 AM.
+	token:tag	= 'fncallstart'
+	token:tag	= 'fprintgvar'
+	token:tag	= 'fprintnvar'
+	token:tag	= 'fprintxvar'
+	token:tag	= 'fprintvar'
+	token:tag	= 'gdump'
+	token:tag	= 'getconcept'
+	token:tag	= 'getconval'
+	token:tag	= 'getnumval'
+	token:tag	= 'getpopupdata'	// 05/30/03 AM.
+	token:tag	= 'getstrval'
+	token:tag	= 'getsval'
+	token:tag	= 'ginc'
+	token:tag	= 'gp'
+	token:tag	= 'group'
+	token:tag	= 'gtolower'
+	token:tag	= 'guniq'
+	token:tag	= 'hitconf'
+	token:tag	= 'if'
+//	token:tag	= 'ifelse",
+//	token:tag	= 'ifstmt",
+	token:tag	= 'inc'
+	token:tag	= 'inheritval'
+	token:tag	= 'inputrange'		// 12/15/02 AM.
+	token:tag	= 'inputrangetofile'	// 05/29/03 AM.
+	token:tag	= 'interactive'		// 05/06/02 AM.
+	token:tag	= 'kbdumptree'		// 12/21/01 AM.
+	token:tag	= 'lasteltnode'
+	token:tag	= 'lastnode'
+	token:tag	= 'length'
+	token:tag	= 'lengthr'
+	token:tag	= 'levenshtein'	// 03/06/07 AM.
+	token:tag	= 'lextagger'		// 12/11/03 AM.
+	token:tag	= 'listadd'
+	token:tag	= 'listnode'
+	token:tag	= 'LJ'
+	token:tag	= 'lj'
+	token:tag	= 'logten'		// 04/29/04 AM.
+//	token:tag	= 'look",	// Not a function.	// 05/31/03 AM.
+	token:tag	= 'lookup'
+	token:tag	= 'lowercase'
+	token:tag	= 'makeconcept'
+	token:tag	= 'makeparentconcept'
+	token:tag	= 'makephrase'
+	token:tag	= 'makestmt'
+	token:tag	= 'merge'
+	token:tag	= 'merger'
+	token:tag	= 'mkdir'		// 12/06/01 AM.
+	token:tag	= 'movecleft'
+	token:tag	= 'movecright'
+	token:tag	= 'movesem'
+	token:tag	= 'ndump'
+	token:tag	= 'next'
+	token:tag	= 'nextattr'
+	token:tag	= 'nextval'
+	token:tag	= 'ninc'
+	token:tag	= 'nodeconcept'
+	token:tag	= 'nodeowner'	// 12/03/02 AM.
+	token:tag	= 'noop'
+	token:tag	= 'num'
+	token:tag	= 'numrange'
+	token:tag	= 'numval'
+	token:tag	= 'openfile'
+	token:tag	= 'or'
+	token:tag	= 'pathconcept'
+	token:tag	= 'percentstr'
+	token:tag	= 'permuten'		// 03/10/04 AM.
+	token:tag	= 'phraselength'
+	token:tag	= 'phraseraw'
+	token:tag	= 'phrasetext'
+	token:tag	= 'pncopyvars'
+	token:tag	= 'pndown'
+	token:tag	= 'pninsert'		// 07/14/08 AM.
+	token:tag	= 'pnmakevar'
+	token:tag	= 'pnname'
+	token:tag	= 'pnnext'
+	token:tag	= 'pnprev'
+	token:tag	= 'pnreplaceval'
+	token:tag	= 'pnroot'
+	token:tag	= 'pnsingletdown'
+	token:tag	= 'pnup'
+	token:tag	= 'pnvar'
+	token:tag	= 'pnvarnames'	// 05/13/02 AM.
+	token:tag	= 'pranchor'
+	token:tag	= 'prchild'
+	token:tag	= 'preaction'
+	token:tag	= 'printvar'
+	token:tag	= 'pndeletechilds'
+	token:tag	= 'pnrename'
+	token:tag	= 'prev'
+	token:tag	= 'print'
+	token:tag	= 'printr'
+	token:tag	= 'prlit'
+	token:tag	= 'prrange'
+	token:tag	= 'prtree'
+	token:tag	= 'prunephrases'
+	token:tag	= 'prxtree'
+	token:tag	= 'regexp'			// 03/24/09 AM.
+	token:tag	= 'regexpi'			// 03/26/09 AM.
+	token:tag	= 'renameattr'
+	token:tag	= 'renamechild'
+	token:tag	= 'renameconcept'
+	token:tag	= 'renamenode'
+	token:tag	= 'replaceval'
+	token:tag	= 'resolveurl'	// 05/14/03 AM.
+	token:tag	= 'return'	// 03/07/02 AM.
+	token:tag	= 'returnstmt'	// 05/30/03 AM.
+	token:tag	= 'rfaaction'
+	token:tag	= 'rfaactions'
+	token:tag	= 'rfaarg'
+	token:tag	= 'rfaargtolist'
+	token:tag	= 'rfacode'
+	token:tag	= 'rfaelement'
+	token:tag	= 'rfaelt'
+	token:tag	= 'rfaexpr'
+	token:tag	= 'rfalist'
+	token:tag	= 'rfalitelt'
+	token:tag	= 'rfalittoaction'
+	token:tag	= 'rfalittopair'
+	token:tag	= 'rfaname'
+	token:tag	= 'rfanodes'
+	token:tag	= 'rfanonlit'
+	token:tag	= 'rfanonlitelt'
+	token:tag	= 'rfanum'
+	token:tag	= 'rfaop'
+	token:tag	= 'rfapair'
+	token:tag	= 'rfapairs'
+	token:tag	= 'rfapostunary'
+	token:tag	= 'rfapres'
+	token:tag	= 'rfarange'
+	token:tag	= 'rfarecurse'
+	token:tag	= 'rfarecurses'
+	token:tag	= 'rfaregion'
+	token:tag	= 'rfaregions'
+	token:tag	= 'rfarule'
+	token:tag	= 'rfarulelts'
+	token:tag	= 'rfarulemark'
+	token:tag	= 'rfarules'
+	token:tag	= 'rfarulesfile'
+	token:tag	= 'rfaselect'
+	token:tag	= 'rfastr'
+	token:tag	= 'rfasugg'
+	token:tag	= 'rfaunary'
+	token:tag	= 'rfavar'
+	token:tag	= 'rfbarg'
+	token:tag	= 'rfbdecl'				// 12/19/01 AM.
+	token:tag	= 'rfbdecls'				// 12/19/01 AM.
+	token:tag	= 'rightjustifynum'
+	token:tag	= 'rmattr'
+	token:tag	= 'rmattrs'
+	token:tag	= 'rmattrval'
+	token:tag	= 'rmchild'
+	token:tag	= 'rmchildren'
+	token:tag	= 'rmconcept'
+	token:tag	= 'rmcphrase'
+	token:tag	= 'rmnode'
+	token:tag	= 'rmphrase'
+	token:tag	= 'rmval'
+	token:tag	= 'rmvals'
+	token:tag	= 'rmword'
+	token:tag	= 'sdump'
+	token:tag	= 'setbase'
+	token:tag	= 'setlookahead'	// 12/14/03 AM.
+	token:tag	= 'setunsealed'
+	token:tag	= 'single'
+	token:tag	= 'singler'
+	token:tag	= 'singlex'
+	token:tag	= 'singlezap'
+	token:tag	= 'sortconsbyattr'	// 12/02/02 AM.
+	token:tag	= 'sortchilds'       // 02/20/09 AM.
+	token:tag	= 'sorthier'         // 02/20/09 AM.
+	token:tag	= 'sortphrase'
+	token:tag	= 'sortvals'
+	token:tag	= 'spellcandidates'
+	token:tag	= 'spellcorrect'
+	token:tag	= 'spellword'
+	token:tag	= 'splice'
+	token:tag	= 'split'				// 03/14/03 AM.
+	token:tag	= 'sqlstr'	// 07/22/03 AM.
+	token:tag	= 'startout'
+	token:tag	= 'stem'		// 12/28/01 AM.
+	token:tag	= 'stopout'
+	token:tag	= 'str'
+	token:tag	= 'strchar'
+	token:tag	= 'strchr'
+	token:tag	= 'strchrcount'	// 12/15/02 AM.
+	token:tag	= 'strclean'
+	token:tag	= 'strcontains'
+	token:tag	= 'strcontainsnocase'
+	token:tag	= 'strendswith'
+	token:tag	= 'strequal'
+	token:tag	= 'strequalnocase'
+	token:tag	= 'strescape'
+	token:tag	= 'strunescape'
+	token:tag	= 'strgreaterthan'
+	token:tag	= 'strisalpha'
+	token:tag	= 'strisdigit'
+	token:tag	= 'strislower'
+	token:tag	= 'strisupper'
+	token:tag	= 'strlength'
+	token:tag	= 'strlessthan'
+	token:tag	= 'strnotequal'
+	token:tag	= 'strnotequalnocase'
+	token:tag	= 'strpiece'
+	token:tag	= 'strrchr'					// FIX.	// 12/21/01 AM.
+	token:tag	= 'strspellcandidate'
+	token:tag	= 'strspellcompare'
+	token:tag	= 'strsubst'
+	token:tag	= 'strtolower'
+	token:tag	= 'strtotitle'
+	token:tag	= 'strtoupper'
+	token:tag	= 'strtrim'
+	token:tag	= 'strval'
+	token:tag	= 'strwrap'
+	token:tag	= 'succeed'
+	token:tag	= 'suffix'	// 11/23/01 AM.
+	token:tag	= 'system'
+	token:tag	= 'take'
+	token:tag	= 'today'
+	token:tag	= 'topdir'
+	token:tag	= 'unknown'
+	token:tag	= 'unpackdirs'
+	token:tag	= 'up'
+	token:tag	= 'uppercase'
+	token:tag	= 'urlbase'		// 03/16/03 AM.
+	token:tag	= 'urltofile'	// 02/20/03 AM.
+	token:tag	= 'var'			// 06/14/05 AM.
+	token:tag	= 'vareq'			// 06/16/05 AM.
+	token:tag	= 'varfn'
+	token:tag	= 'varfnarray'
+	token:tag	= 'varinlist'
+	token:tag	= 'varne'			// 06/16/05 AM.
+	token:tag	= 'varstrs'
+	token:tag	= 'varz'			// 06/16/05 AM.
+	token:tag	= 'wninit'
+	token:tag	= 'wnsensestoconcept'
+	token:tag	= 'wnhypnymstoconcept'
+	token:tag	= 'while'
+//	token:tag	= 'whilestmt",
+	token:tag	= 'wordindex'
+	token:tag	= 'wordpath'
+	token:tag	= 'xaddlen'
+	token:tag	= 'xaddnvar'
+	token:tag	= 'xdump'
+	token:tag	= 'xinc'
+	token:tag	= 'xmlstr'		// 05/10/03 AM.
+	token:tag	= 'xrename'
+	
+	token:start:separators	= ' ', '\t', ':', ';', '!', '(', ')', ',', '/', '{', '}', @eol
+	token:end:separators	= ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol

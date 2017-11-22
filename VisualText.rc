@@ -1,0 +1,3446 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VisualText.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VisualText.ico"
+
+IDI_TEXT                ICON                    "res\\VisualTextDoc.ico"
+
+IDI_KB                  ICON                    "res\\icon2.ico"
+
+IDI_PAT                 ICON                    "res\\ico00001.ico"
+
+IDI_TREE                ICON                    "res\\ico00002.ico"
+
+IDI_GLOBE               ICON                    "res\\ico00003.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WORKSPACE           BITMAP                  "res\\img_workspace.bmp"
+
+IDB_MAIN                BITMAP                  "res\\Toolbar.bmp"
+
+33034                   BITMAP                  "res\\bmp00001.bmp"
+
+IDB_ANALYZER            BITMAP                  "res\\il_rsrc.bmp"
+
+IDB_IL_FILE             BITMAP                  "res\\il_file.bmp"
+
+IDB_IL_TAB              BITMAP                  "res\\il_tab.bmp"
+
+IDR_BROWSER_TOOLBAR     BITMAP                  "res\\browser.bmp"
+
+IDB_GRAMMAR             BITMAP                  "res\\bmp00002.bmp"
+
+33071                   BITMAP                  "res\\attribut.bmp"
+
+IDB_OUTPUT              BITMAP                  "res\\output.bmp"
+
+TEAR_DOWNU              BITMAP                  "res\\bmp00005.bmp"
+
+TEAR_DOWND              BITMAP                  "res\\bmp00006.bmp"
+
+TEAR_DOWNF              BITMAP                  "res\\bmp00007.bmp"
+
+TEAR_DOWNX              BITMAP                  "res\\bmp00008.bmp"
+
+TEAR_UPD                BITMAP                  "res\\tear_upd.bmp"
+
+TEAR_UPF                BITMAP                  "res\\tear_upf.bmp"
+
+TEAR_UPU                BITMAP                  "res\\tear_upu.bmp"
+
+TEAR_UPX                BITMAP                  "res\\tear_upx.bmp"
+
+UPD                     BITMAP                  "res\\upd.bmp"
+
+UPF                     BITMAP                  "res\\upf.bmp"
+
+UPU                     BITMAP                  "res\\bmp00009.bmp"
+
+UPX                     BITMAP                  "res\\upx.bmp"
+
+DOWNX                   BITMAP                  "res\\downx.bmp"
+
+DOWNF                   BITMAP                  "res\\downf.bmp"
+
+DOWNU                   BITMAP                  "res\\bmp00010.bmp"
+
+DOWND                   BITMAP                  "res\\downd.bmp"
+
+GATHER_DOWND            BITMAP                  "res\\bmp00011.bmp"
+
+GATHER_DOWNF            BITMAP                  "res\\bmp00012.bmp"
+
+GATHER_DOWNU            BITMAP                  "res\\bmp00013.bmp"
+
+GATHER_DOWNX            BITMAP                  "res\\bmp00014.bmp"
+
+GATHER_UPX              BITMAP                  "res\\gather_u.bmp"
+
+GATHER_UPD              BITMAP                  "res\\bmp00015.bmp"
+
+GATHER_UPF              BITMAP                  "res\\bmp00016.bmp"
+
+GATHER_UPU              BITMAP                  "res\\bmp00017.bmp"
+
+DRAG_DOWND              BITMAP                  "res\\bmp00003.bmp"
+
+DRAG_DOWNF              BITMAP                  "res\\bmp00004.bmp"
+
+DRAG_DOWNU              BITMAP                  "res\\bmp00018.bmp"
+
+DRAG_DOWNX              BITMAP                  "res\\bitmap1.bmp"
+
+DRAG_UPD                BITMAP                  "res\\drag_upd.bmp"
+
+DRAG_UPF                BITMAP                  "res\\drag_upf.bmp"
+
+DRAG_UPU                BITMAP                  "res\\bmp00019.bmp"
+
+DRAG_UPX                BITMAP                  "res\\drag_upx.bmp"
+
+IDB_KNOWLEDGE           BITMAP                  "res\\bmp00022.bmp"
+
+33104                   BITMAP                  "res\\bmp00023.bmp"
+
+33105                   BITMAP                  "res\\url.bmp"
+
+IDB_PARSE_TREE          BITMAP                  "res\\bmp00024.bmp"
+
+33021                   BITMAP                  "res\\up.bmp"
+
+33110                   BITMAP                  "res\\no_attrs.bmp"
+
+33120                   BITMAP                  "res\\bmp00026.bmp"
+
+33010                   BITMAP                  "res\\AttributeEditorIcons.bmp"
+
+33127                   BITMAP                  "res\\bmp00027.bmp"
+
+ATTR_NEXTD              BITMAP                  "res\\attnextd.bmp"
+
+ATTR_NEXTF              BITMAP                  "res\\attnextf.bmp"
+
+ATTR_NEXTU              BITMAP                  "res\\attnextu.bmp"
+
+ATTR_NEXTX              BITMAP                  "res\\attnextx.bmp"
+
+ATTR_PREVF              BITMAP                  "res\\attprevf.bmp"
+
+ATTR_PREVD              BITMAP                  "res\\attprevd.bmp"
+
+ATTR_PREVU              BITMAP                  "res\\attprevu.bmp"
+
+ATTR_PREVX              BITMAP                  "res\\attprevx.bmp"
+
+ATTR_KBD                BITMAP                  "res\\attkbd.bmp"
+
+ATTR_KBF                BITMAP                  "res\\attkbf.bmp"
+
+ATTR_KBU                BITMAP                  "res\\attkbu.bmp"
+
+ATTR_KBX                BITMAP                  "res\\attkbx.bmp"
+
+ATTR_DELETE_WORDD       BITMAP                  "res\\bmp00028.bmp"
+
+ATTR_DELETE_WORDF       BITMAP                  "res\\attr_loo.bmp"
+
+ATTR_DELETE_WORDU       BITMAP                  "res\\attr_del.bmp"
+
+ATTR_DELETE_WORDX       BITMAP                  "res\\bmp00029.bmp"
+
+ATTR_LOOKUPD            BITMAP                  "res\\bmp00030.bmp"
+
+ATTR_LOOKUPF            BITMAP                  "res\\bmp00031.bmp"
+
+ATTR_LOOKUPU            BITMAP                  "res\\bmp00032.bmp"
+
+ATTR_LOOKUPX            BITMAP                  "res\\bmp00033.bmp"
+
+LKUP_UPX                BITMAP                  "res\\lkup_upx.bmp"
+
+LKUP_UPU                BITMAP                  "res\\lkup_upu.bmp"
+
+LKUP_UPF                BITMAP                  "res\\lkup_upf.bmp"
+
+LKUP_UPD                BITMAP                  "res\\lkup_upd.bmp"
+
+LKUP_DOWNX              BITMAP                  "res\\lkup_dnx.bmp"
+
+LKUP_DOWNU              BITMAP                  "res\\lkup_dnu.bmp"
+
+LKUP_DOWNF              BITMAP                  "res\\lkup_dnf.bmp"
+
+LKUP_DOWND              BITMAP                  "res\\lkup_dnd.bmp"
+
+ATTR_DOWNU              BITMAP                  "res\\bmp00034.bmp"
+
+ATTR_DOWND              BITMAP                  "res\\attr_dow.bmp"
+
+ATTR_DOWNF              BITMAP                  "res\\bmp00035.bmp"
+
+ATTR_DOWNX              BITMAP                  "res\\bmp00036.bmp"
+
+ATTR_UPD                BITMAP                  "res\\attr_upd.bmp"
+
+ATTR_UPF                BITMAP                  "res\\attr_upf.bmp"
+
+ATTR_UPU                BITMAP                  "res\\attr_upu.bmp"
+
+ATTR_UPX                BITMAP                  "res\\attr_upx.bmp"
+
+IDR_KNOWLEDGE_TOOLBAR   BITMAP                  "res\\knowledge.bmp"
+
+IDB_TEXT                BITMAP                  "res\\analyzer.bmp"
+
+IDR_DEBUG_TOOLBAR       BITMAP                  "res\\debug_to.bmp"
+
+IDR_TAB_TOOLBAR         BITMAP                  "res\\tab_tool.bmp"
+
+IDR_MAINFRAME_TOOLBAR   BITMAP                  "res\\mainfram.bmp"
+
+IDR_ANALYZER_TOOLBAR    BITMAP                  "res\\toolbar1.bmp"
+
+IDR_GRAMMAR_TOOLBAR     BITMAP                  "res\\bmp00020.bmp"
+
+IDB_SPLASH              BITMAP                  "res\\VTSplash.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_BROWSER_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_NEW_BROWSER
+    BUTTON      ID_ADD_URL
+    BUTTON      ID_GO_URL
+    BUTTON      ID_URL_COMBOBOX
+    BUTTON      ID_URL_STOP
+    BUTTON      ID_BACK_URL
+    BUTTON      ID_FORWARD_URL
+    BUTTON      ID_CLEAR_URL
+END
+
+IDR_KNOWLEDGE_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_ATTRIBUTEEDITOR
+    BUTTON      ID_KNOWLEDGE_BASE
+    BUTTON      ID_KB_UP
+    BUTTON      ID_KB_DOWN
+    BUTTON      ID_SAVE_KB
+    BUTTON      ID_COMPILE_KB
+    SEPARATOR
+    BUTTON      ID_COMPILE
+    BUTTON      ID_GEN_ANALYZER
+    BUTTON      ID_GEN_DIRTY_AND_RUN
+    BUTTON      ID_RUN
+    BUTTON      ID_RUN_NEXT
+    BUTTON      ID_STOP_PROCESS
+    SEPARATOR
+    BUTTON      ID_HIGHLIGHTING
+    BUTTON      ID_GENERATELOGS
+    BUTTON      ID_VERBOSE_MODE
+    BUTTON      ID_BATCH_MODE
+END
+
+IDR_DEBUG_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PAGE_MODE
+    BUTTON      ID_PREV_TEXT
+    BUTTON      ID_NEXT_TEXT
+    SEPARATOR
+    BUTTON      ID_PROCESSED_TEXT
+    BUTTON      ID_WEBPAGE
+    BUTTON      ID_RULE_FILE
+    BUTTON      ID_TREE
+    BUTTON      ID_TREE_CONCEPT
+    BUTTON      ID_NODE_SEMANTICS
+    SEPARATOR
+    BUTTON      ID_DUMP
+    BUTTON      ID_OUTPUT
+END
+
+IDR_TAB_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_RECENT_COMBO
+    BUTTON      ID_TREE_UP
+    BUTTON      ID_TREE_DOWN
+    BUTTON      ID_DELETE
+END
+
+IDR_MAINFRAME_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_SAVE_ALL
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_FIND
+    BUTTON      ID_FIND_BACK
+    BUTTON      ID_FIND_FORWARD
+    SEPARATOR
+    BUTTON      ID_VIEW_BAR1
+    BUTTON      ID_VIEW_BAR2
+    BUTTON      ID_VIEW_BAR3
+    BUTTON      ID_VIEW_FULLSCREEN
+END
+
+IDR_ANALYZER_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_TREE_UP
+    BUTTON      ID_TREE_DOWN
+    BUTTON      ID_DELETE
+END
+
+IDR_GRAMMAR_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_TREE_UP
+    BUTTON      ID_TREE_DOWN
+    BUTTON      ID_DELETE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open...\tCtrl+O",             ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "Save Analyzer &As",           ID_FILE_SAVEANALYZERAS
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print\tCtrl+P",              ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "&Recent Files"
+        BEGIN
+            MENUITEM "&Recent Files",               ID_FILE_MRU_FILE1
+        END
+        POPUP "Recent Anal&yzers"
+        BEGIN
+            MENUITEM "Recent Analyzer",             ID_FILE_RECENTANALYZERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND
+        MENUITEM "R&eplace",                    ID_EDIT_REPLACE
+        MENUITEM "Fi&nd in Files",              ID_TOOLS_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Compile Analyzer",           ID_ANALYZER_COMPILEANALYZER
+        POPUP "&Generate Rules"
+        BEGIN
+            MENUITEM "&All\tCtrl+G",                ID_ANALYZER_GENERATEALL
+            MENUITEM "&Dirty",                      ID_ANALYZER_GENERATEDIRTY
+            MENUITEM "&Unlocked",                   ID_ANALYZER_GENERATEUNLOCKED
+        END
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "Sl&og\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "&Stop",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "Generate &Logs\tCtrl+L",      ID_GENERATELOGS
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+            MENUITEM "Current &Text",               ID_PROCESSED_TEXT
+            MENUITEM "&Dump Files",                 ID_DUMP
+            MENUITEM "&Output File",                ID_OUTPUT
+            MENUITEM "&Parse Tree",                 ID_TREE
+            MENUITEM "Pass &File",                  ID_RULE_FILE
+            MENUITEM "&Web Page",                   ID_WEBPAGE
+        END
+    END
+    POPUP "&KB"
+    BEGIN
+        MENUITEM "KB &Editor",                  ID_KNOWLEDGE_BASE
+        MENUITEM "&Attribute Editor",           ID_ATTRIBUTEEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Compile KB",                 ID_KB_COMPILEKB
+        MENUITEM "Move Concept &Up",            ID_KB_UP
+        MENUITEM "Move Concept &Down",          ID_KB_DOWN
+        MENUITEM "&Save KB",                    ID_SAVE_KB
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Analyzer View",               ID_VIEW_ANALYZERVIEW
+        MENUITEM "Text View",                   ID_VIEW_TEXTVIEW
+        MENUITEM "Grammar View",                ID_VIEW_GRAMMARVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM "&Highlight Mode\tCtrl+H",     ID_HIGHLIGHTING
+        MENUITEM "No&de Variable Mode",         ID_VIEW_TREESEMANTICSMODE
+        MENUITEM "&Offsets Mode",               ID_VIEW_TREEOFFSETSMODE
+        MENUITEM "Tree Te&xt Mode",             ID_VIEW_TREETEXTMODE, CHECKED
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "&Verbose Mode",               ID_VERBOSE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Next Text",                  ID_NEXT_TEXT
+        MENUITEM "&Previous Text",              ID_PREV_TEXT
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
+        MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW
+        MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_VIEW_OPTIONS
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Browser",                ID_NEW_BROWSER
+        MENUITEM "&Save URL Text",              ID_ADD_URL
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+            MENUITEM "Visual Studio 2008",          ID_THEME_VISUALSTUDIO2008
+            MENUITEM "Visual Studio 2010",          ID_THEME_VISUALSTUDIO2010
+        END
+        MENUITEM "Rule Edit Options",           ID_TOOLS_RULEEDITOPTIONS
+        MENUITEM "&ASCII Table",                ID_TOOLS_ASCIITABLE
+        MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TOOLS_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TOOLS_KBATTRIBUTES
+            MENUITEM "&Lookup",                     0
+        END
+        MENUITEM "&Email Tool",                 ID_TOOLS_EMAIL
+        MENUITEM "&Hex Viewer",                 ID_TOOLS_HEXVIEWER
+        MENUITEM "&Text File Info",             ID_TOOLS_TEXTFILEINFO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM "&Tip of the Day",             ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+    END
+END
+
+IDR_VISUALTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open\tCtrl+O",                ID_FILE_OPEN
+        MENUITEM "Close\tCtrl+E",               ID_FILE_CLOSE
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save As\tCtrl+T",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "Save Analyzer &As",           ID_FILE_SAVEANALYZERAS
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "&Recent Files"
+        BEGIN
+            MENUITEM "&Recent Files",               ID_FILE_MRU_FILE1
+        END
+        POPUP "Recent Anal&yzers"
+        BEGIN
+            MENUITEM "Recent Analyzer",             ID_FILE_RECENTANALYZERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND
+        MENUITEM "R&eplace",                    ID_EDIT_REPLACE
+        MENUITEM "Fi&nd in Files",              ID_TOOLS_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+        MENUITEM SEPARATOR
+        MENUITEM "Change Font..",               ID_FONTS
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Compile Analyzer",           ID_ANALYZER_COMPILEANALYZER
+        POPUP "&Generate Rules"
+        BEGIN
+            MENUITEM "&All\tCtrl+G",                ID_ANALYZER_GENERATEALL
+            MENUITEM "&Dirty",                      ID_ANALYZER_GENERATEDIRTY
+            MENUITEM "&Unlocked",                   ID_ANALYZER_GENERATEUNLOCKED
+        END
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "Sl&og\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "&Stop",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "Generate &Logs\tCtrl+L",      ID_GENERATELOGS
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+            MENUITEM "Current &Text",               ID_PROCESSED_TEXT
+            MENUITEM "&Dump Files",                 ID_DUMP
+            MENUITEM "&Output File",                ID_OUTPUT
+            MENUITEM "&Parse Tree",                 ID_TREE
+            MENUITEM "Pass &File",                  ID_RULE_FILE
+            MENUITEM "&Web Page",                   ID_WEBPAGE
+        END
+    END
+    POPUP "&KB"
+    BEGIN
+        MENUITEM "KB &Editor",                  ID_KNOWLEDGE_BASE
+        MENUITEM "&Attribute Editor",           ID_ATTRIBUTEEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Compile KB",                 ID_KB_COMPILEKB
+        MENUITEM "Move Concept &Up",            ID_KB_UP
+        MENUITEM "Move Concept &Down",          ID_KB_DOWN
+        MENUITEM "&Save KB",                    ID_SAVE_KB
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM "&Highlight Mode\tCtrl+H",     ID_HIGHLIGHTING
+        MENUITEM "No&de Variable Mode",         ID_VIEW_TREESEMANTICSMODE
+        MENUITEM "&Offsets Mode",               ID_VIEW_TREEOFFSETSMODE
+        MENUITEM "Tree Te&xt Mode",             ID_VIEW_TREETEXTMODE, CHECKED
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "&Verbose Mode",               ID_VERBOSE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Next Text",                  ID_NEXT_TEXT
+        MENUITEM "&Previous Text",              ID_PREV_TEXT
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
+        MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW, GRAYED
+        MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_VIEW_OPTIONS
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Browser",                ID_NEW_BROWSER
+        MENUITEM "&Save URL Text",              ID_ADD_URL
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+            MENUITEM "Visual Studio 2008",          ID_THEME_VISUALSTUDIO2008
+            MENUITEM "Visual Studio 2010",          ID_THEME_VISUALSTUDIO2010
+        END
+        MENUITEM "Rule Edit Options",           ID_TOOLS_RULEEDITOPTIONS
+        MENUITEM "&ASCII Table",                ID_TOOLS_ASCIITABLE
+        MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TOOLS_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TOOLS_KBATTRIBUTES
+            MENUITEM "&Lookup",                     65535
+        END
+        MENUITEM "&Email Tool",                 ID_TOOLS_EMAIL
+        MENUITEM "&Hex Viewer",                 ID_TOOLS_HEXVIEWER
+        MENUITEM "&Text File Info",             ID_TOOLS_TEXTFILEINFO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+    END
+END
+
+IDR_TREEVIEWTEXT MENU
+BEGIN
+    POPUP "&Dir Tree Menu"
+    BEGIN
+        POPUP "&Add"
+        BEGIN
+            MENUITEM "Existing Folder",             ID_DIRTREEMENU_ADDEXISTINGFOLDER
+            MENUITEM "&Existing Text File",         ID_DIRTREEMENU_ADDEXISTINGTEXT
+            MENUITEM "&Folder",                     ID_DIRTREEMENU_ADDFOLDER
+            MENUITEM "&New Text File",              ID_DIRTREEMENU_NEWTEXT
+            POPUP "&Top Level"
+            BEGIN
+                MENUITEM "&Existing Text File",         ID_DIRTREEMENU_ADD_TOPLEVEL_EXISTINGTEXTFILE
+                MENUITEM "&Folder",                     ID_DIRTREEMENU_ADD_TOPLEVEL_FOLDER
+                MENUITEM "&New Text File",              ID_DIRTREEMENU_ADD_TOPLEVEL_NEWTEXTFILE
+            END
+        END
+        MENUITEM "Attri&butes",                 ID_DIRTREEMENU_ATTRIBUTES
+        MENUITEM "&Move to Top Level",          ID_DIRTREEMENU_MOVETOTOPLEVEL
+        MENUITEM "Re&fresh",                    ID_DIRTREEMENU_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete",                     ID_DIRTREEMENU_DELETE
+        MENUITEM "Delete &Children",            ID_DIRTREEMENU_DELETECHILDREN
+        MENUITEM "Delete &Logs",                ID_DIRTREEMENU_DELETELOGS
+        POPUP "Dictionary"
+        BEGIN
+            MENUITEM "&Add Words",                  ID_DIRTREEMENU_DICTIONARY_ADDWORDS
+            MENUITEM "&Lookup",                     65535
+        END
+        MENUITEM "&Edit/View",                  ID_DIRTREEMENU_EDITVIEW
+        MENUITEM "Re&name",                     ID_DIRTREEMENU_RENAME
+        POPUP "&Tools"
+        BEGIN
+            MENUITEM "&ASCII Table",                ID_DIRTREEMENU_TOOLS_ASCIITABLE
+            MENUITEM "&Character Viewer",           ID_DIRTREEMENU_TOOLS_CHARACTERVIEWER
+            MENUITEM "&Dictionize",                 ID_DIRTREEMENU_DICTIONIZE
+            MENUITEM "&Email Tool",                 ID_DIRTREEMENU_TOOLS_EMAIL
+            MENUITEM "&Hex Viewer",                 ID_DIRTREEMENU_TOOLS_HEXVIEWER
+            MENUITEM "&Jumble",                     ID_DIRTREEMENU_TOOLS_JUMBLE
+            MENUITEM "&Mask",                       ID_DIRTREEMENU_MASK
+            MENUITEM "&Text File Info",             ID_DIRTREEMENU_TEXTFILEINFO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Go to &Webpage",              ID_DIRTREEMENU_GOTOWEBPAGE
+        MENUITEM "&Update Webpage(s)",          ID_DIRTREEMENU_UPDATEWEBPAGE
+        MENUITEM "&View As Webpage",            ID_DIRTREEMENU_VIEWASWEBPAGE
+        MENUITEM SEPARATOR
+        POPUP "Text Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_DIRTREEMENU_ARCHIVETEXT
+            MENUITEM "&Archive Remote",             ID_DIRTREEMENU_UPLOADTEXT
+            MENUITEM "&View Local",                 ID_DIRTREEMENU_LOCALARCHIVE
+            MENUITEM "View &Remote",                ID_DIRTREEMENU_SERVERARCHIVES
+        END
+        MENUITEM "&Run Analyzer",               ID_DIRTREEMENU_RUNANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "Explore Directory",           ID_DIRTREEMENU_EXPLOREDIRECTORY
+        MENUITEM "&Help",                       ID_DIRTREEMENU_HELP
+    END
+END
+
+IDR_BROWSER_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open\tCtrl+O",                ID_FILE_OPEN
+        MENUITEM "Close\tCtrl+E",               ID_FILE_CLOSE
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save As\tCtrl+T",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "Save Analyzer &As",           ID_FILE_SAVEANALYZERAS
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print\tCtrl+P",              ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "&Recent Files"
+        BEGIN
+            MENUITEM "&Recent Files",               ID_FILE_MRU_FILE1
+        END
+        POPUP "Recent Anal&yzers"
+        BEGIN
+            MENUITEM "Recent Analyzer",             ID_FILE_RECENTANALYZERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Fi&nd in Files",              ID_TOOLS_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Compile Analyzer",           ID_ANALYZER_COMPILEANALYZER
+        POPUP "&Generate Rules"
+        BEGIN
+            MENUITEM "&All\tCtrl+G",                ID_ANALYZER_GENERATEALL
+            MENUITEM "&Dirty",                      ID_ANALYZER_GENERATEDIRTY
+            MENUITEM "&Unlocked",                   ID_ANALYZER_GENERATEUNLOCKED
+        END
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "Sl&og\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "&Stop",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "Generate &Logs\tCtrl+L",      ID_GENERATELOGS
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+            MENUITEM "Current &Text",               ID_PROCESSED_TEXT
+            MENUITEM "&Dump Files",                 ID_DUMP
+            MENUITEM "&Output File",                ID_OUTPUT
+            MENUITEM "&Parse Tree",                 ID_TREE
+            MENUITEM "Pass &File",                  ID_RULE_FILE
+            MENUITEM "&Web Page",                   ID_WEBPAGE
+        END
+    END
+    POPUP "&KB"
+    BEGIN
+        MENUITEM "KB &Editor",                  ID_KNOWLEDGE_BASE
+        MENUITEM "&Attribute Editor",           ID_ATTRIBUTEEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Compile KB",                 ID_KB_COMPILEKB
+        MENUITEM "Move Concept &Up",            ID_KB_UP
+        MENUITEM "Move Concept &Down",          ID_KB_DOWN
+        MENUITEM "&Save KB",                    ID_SAVE_KB
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM "&Highlight Mode\tCtrl+H",     ID_HIGHLIGHTING
+        MENUITEM "No&de Variable Mode",         ID_VIEW_TREESEMANTICSMODE
+        MENUITEM "&Offsets Mode",               ID_VIEW_TREEOFFSETSMODE
+        MENUITEM "Tree Te&xt Mode",             ID_VIEW_TREETEXTMODE, CHECKED
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "&Verbose Mode",               ID_VERBOSE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Next Text",                  ID_NEXT_TEXT
+        MENUITEM "&Previous Text",              ID_PREV_TEXT
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
+        MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW
+        MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Browser",                ID_NEW_BROWSER
+        MENUITEM "&Save URL Text",              ID_ADD_URL
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+            MENUITEM "Visual Studio 2008",          ID_THEME_VISUALSTUDIO2008
+            MENUITEM "Visual Studio 2010",          ID_THEME_VISUALSTUDIO2010
+        END
+        MENUITEM "Rule Edit Options",           ID_TOOLS_RULEEDITOPTIONS
+        MENUITEM "&ASCII Table",                ID_TOOLS_ASCIITABLE
+        MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TOOLS_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TOOLS_KBATTRIBUTES
+            MENUITEM "&Lookup",                     0
+        END
+        MENUITEM "&Email Tool",                 ID_TOOLS_EMAIL
+        MENUITEM "&Hex Viewer",                 ID_TOOLS_HEXVIEWER
+        MENUITEM "&Text File Info",             ID_TOOLS_TEXTFILEINFO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+    END
+END
+
+IDR_HELP MENU
+BEGIN
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP_HELP
+    END
+END
+
+IDR_ANALYZER MENU
+BEGIN
+    POPUP "&Sequence Menu"
+    BEGIN
+        POPUP "&Add"
+        BEGIN
+            MENUITEM "&Folder",                     ID_SEQUENCEMENU_ADD_FOLDER
+            POPUP "&Library Pass"
+            BEGIN
+                MENUITEM "Fred",                        ID_SEQUENCEMENU_ADDPASS_FRED
+            END
+            MENUITEM "&New Pass",                   ID_SEQUENCEMENU_NEW
+            MENUITEM "&Pass from File",             ID_SEQUENCEMENU_ADDEXISTINGRULES
+            MENUITEM "&Stub",                       ID_SEQUENCEMENU_ADD_STUB
+            POPUP "&Top Level"
+            BEGIN
+                MENUITEM "&Folder",                     ID_SEQUENCEMENU_ADD_TOPLEVEL_FOLDER
+                POPUP "&Library Pass"
+                BEGIN
+                    MENUITEM "Fred",                        ID_SEQUENCEMENU_ADD_TOPLEVEL_PASS_FRED
+                END
+                MENUITEM "&New Pass",                   ID_SEQUENCEMENU_ADD_TOPLEVEL_NEW
+                MENUITEM "&Pass from File",             ID_SEQUENCEMENU_ADD_TOPLEVEL_EXISTINGPASS
+            END
+        END
+        MENUITEM "Attri&butes",                 ID_SEQUENCEMENU_ATTRIBUTES
+        MENUITEM "&Delete",                     ID_SEQUENCEMENU_DELETE
+        MENUITEM "Delete Passes",               ID_SEQUENCEMENU_DELETEPASSES
+        MENUITEM "D&uplicate",                  ID_SEQUENCEMENU_DUPLICATE
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Pass File",             ID_SEQUENCEMENU_EDITRULES
+        MENUITEM "&Highlight Matches",          ID_SEQUENCEMENU_HIGHLIGHTMATCHES
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_SEQUENCEMENU_VIEWCONCEPTTREE
+            MENUITEM "&Final Tree",                 ID_SEQUENCEMENU_VIEWENTIRETREE
+            MENUITEM "Entire &Tree",                ID_SEQUENCEMENU_VIEWFULLTREE
+            MENUITEM "&Log",                        ID_SEQUENCEMENU_VIEWLOG
+            MENUITEM "Tree &Matches",               ID_SEQUENCEMENU_VIEWTREEMATCHES
+        END
+        MENUITEM SEPARATOR
+        POPUP "Ana Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_SEQUENCEMENU_ARCHIVERULES
+            MENUITEM "&Archive Remote",             ID_SEQUENCEMENU_UPLOADRULES
+            MENUITEM "&View Local",                 ID_SEQUENCEMENU_LOCALARCHIVES
+            MENUITEM "View &Remote",                ID_SEQUENCEMENU_SERVERARCHIVES
+        END
+        MENUITEM "&Properties",                 ID_SEQUENCEMENU_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       ID_SEQUENCEMENU_HELP
+    END
+END
+
+IDR_RULEFILE MENU
+BEGIN
+    POPUP "&Rule File"
+    BEGIN
+        POPUP "&Add/Remove"
+        BEGIN
+            MENUITEM "&except",                     ID_RULEFILE_ADD_EXCEPT
+            MENUITEM "&fails",                      ID_RULEFILE_ADD_FAILS
+            MENUITEM "&layer",                      ID_RULEFILE_ADDREMOVE_LAYER
+            MENUITEM "loo&kahead",                  ID_RULEFILE_ADDREMOVE_LOOKAHEAD
+            MENUITEM "&matches",                    ID_RULEFILE_ADD_MATCHES
+            MENUITEM "ma&x",                        ID_RULEFILE_ADDREMOVE_MAX
+            MENUITEM "mi&n",                        ID_RULEFILE_ADDREMOVE_MIN
+            MENUITEM "&one",                        ID_RULEFILE_ADDREMOVE_ONE
+            MENUITEM "opt&ional",                   ID_RULEFILE_ADD_OPTIONAL
+            MENUITEM "&plus",                       ID_RULEFILE_ADDREMOVE_PLUS
+            MENUITEM "sta&r",                       ID_RULEFILE_ADD_STAR
+            MENUITEM "&s",                          ID_RULEFILE_ADDREMOVE_S
+            MENUITEM "&tree",                       ID_RULEFILE_ADDREMOVE_TREE
+            MENUITEM "tri&g",                       ID_RULEFILE_ADDREMOVE_TRIG
+        END
+        POPUP "&Change to"
+        BEGIN
+            MENUITEM "_x&ALPHA",                    ID_RULEFILE_CHANGE_XALPHA
+            MENUITEM "_x&NUM",                      ID_RULEFILE_CHANGE_XNUM
+            MENUITEM "_x&WHITE",                    ID_RULEFILE_CHANGETO_XWHITE
+            MENUITEM "_xWIL&D",                     ID_RULEFILE_CHANGE_XWILD
+        END
+        MENUITEM "Comment/&Uncomment",          ID_RULEFILE_COMMENTUNCOMMENT
+        POPUP "Con&vert"
+        BEGIN
+            MENUITEM "&One Line to Standard Rule Format", ID_RULEFILE_CONVERT_ONELINETOMULTIPLE
+            MENUITEM "String to &Literal Rule",     ID_RULEFILE_STRINGTORULE
+            MENUITEM "String to &General Rule",     ID_RULEFILE_CONVERT_STRINGTOGENERALRULE
+        END
+        MENUITEM "&Delete Line",                ID_RULEFILE_DELETELINE
+        MENUITEM "Du&plicate Line",             ID_RULEFILE_DUPLICATELINE
+        POPUP "&Insert"
+        BEGIN
+            MENUITEM "_x&ALPHA",                    ID_RULEFILE_INSERT_XALPHA
+            MENUITEM "_xNUM",                       ID_RULEFILE_INSERT_XNUM
+            MENUITEM "_x&PUNCT",                    ID_RULEFILE_INSERT_XPUNCT
+            MENUITEM "_x&WHITE",                    ID_RULEFILE_INSERT_XWHITE
+            MENUITEM SEPARATOR
+            MENUITEM "@POS&T",                      ID_RULEFILE_INSERT_POST
+            MENUITEM "@POST @&RULE",                ID_RULEFILE_INSERT_POSTRULE
+            MENUITEM "@RU&LES -> _xALPHA",          ID_RULEFILE_INSERT_RULES
+            MENUITEM SEPARATOR
+            MENUITEM "&Dump Phrase to File",        ID_RULEFILE_INSERT_DUMPFILE
+            MENUITEM "&Header",                     ID_RULEFILE_HEADER
+        END
+        POPUP "Insert &Line"
+        BEGIN
+            MENUITEM "_x&ALPHA",                    ID_RULEFILE_INSERTLINE_XALPHA
+            MENUITEM "_x&NUM",                      ID_RULEFILE_INSERTLINE_XNUM
+            MENUITEM "_x&START",                    ID_RULEFILE_INSERTLINE_XSTART
+            MENUITEM "_x&WHITE",                    ID_RULEFILE_INSERTLINE_XWHITE
+            MENUITEM "_xWIL&D",                     ID_RULEFILE_INSERTLINE_XWILD
+        END
+        MENUITEM "&Reformat Standard Rule",     ID_RULEFILE_REFORMATRULE
+        MENUITEM SEPARATOR
+        POPUP "&Find"
+        BEGIN
+            MENUITEM "Find &Selected Text",         ID_RULEFILE_FINDLOCAL
+            MENUITEM "Find &Again",                 ID_RULEFILE_FINDAGAIN
+            MENUITEM "&Find in Files",              ID_RULEFILE_FIND
+            MENUITEM "Find in &Log",                ID_RULEFILE_FINDINLOG
+        END
+        MENUITEM "Highlight &Matches",          ID_RULEFILE_HIGHLIGHTMATCHES
+        MENUITEM "Select Analyzer &Pass",       ID_RULEFILE_SELECTPASS
+        MENUITEM SEPARATOR
+        MENUITEM "&Run",                        ID_RULEFILE_RUN
+        MENUITEM "&Save",                       ID_RULEFILE_SAVE
+        MENUITEM "&View Log",                   ID_RULEFILE_VIEWLOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Rest",                 ID_RULEFILE_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Help on Selection",           ID_RULEFILE_HELPONSELECTION
+        MENUITEM "&NLP++ Help",                 ID_RULEFILE_NLPHELP
+        MENUITEM "Pass File &Help",             ID_RULEFILE_RULEHELP
+    END
+END
+
+IDR_PARSETREE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open\tCtrl+O",                ID_FILE_OPEN
+        MENUITEM "Close\tCtrl+E",               ID_FILE_CLOSE
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save As\tCtrl+T",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "Save Analyzer &As",           ID_FILE_SAVEANALYZERAS
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "&Recent Files"
+        BEGIN
+            MENUITEM "&Recent Files",               ID_FILE_MRU_FILE1
+        END
+        POPUP "Recent Anal&yzers"
+        BEGIN
+            MENUITEM "Recent Analyzer",             ID_FILE_RECENTANALYZERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find in Files",              ID_TOOLS_FIND
+        MENUITEM "Fi&nd Selected Node in Files", ID_PARSETREE_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Compile Analyzer",           ID_ANALYZER_COMPILEANALYZER
+        POPUP "&Generate Rules"
+        BEGIN
+            MENUITEM "&All\tCtrl+G",                ID_ANALYZER_GENERATEALL
+            MENUITEM "&Dirty",                      ID_ANALYZER_GENERATEDIRTY
+            MENUITEM "&Unlocked",                   ID_ANALYZER_GENERATEUNLOCKED
+        END
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "Sl&og\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "&Stop",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "Generate &Logs\tCtrl+L",      ID_GENERATELOGS
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+            MENUITEM "Current &Text",               ID_PROCESSED_TEXT
+            MENUITEM "&Dump Files",                 ID_DUMP
+            MENUITEM "&Output File",                ID_OUTPUT
+            MENUITEM "&Parse Tree",                 ID_TREE
+            MENUITEM "Pass &File",                  ID_RULE_FILE
+            MENUITEM "&Web Page",                   ID_WEBPAGE
+        END
+    END
+    POPUP "&KB"
+    BEGIN
+        MENUITEM "KB &Editor",                  ID_KNOWLEDGE_BASE
+        MENUITEM "&Attribute Editor",           ID_ATTRIBUTEEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Compile KB",                 ID_KB_COMPILEKB
+        MENUITEM "Move Concept &Up",            ID_KB_UP
+        MENUITEM "Move Concept &Down",          ID_KB_DOWN
+        MENUITEM "&Save KB",                    ID_SAVE_KB
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Analyzer View",               ID_VIEW_ANALYZERVIEW
+        MENUITEM "Text View",                   ID_VIEW_TEXTVIEW
+        MENUITEM "Grammar View",                ID_VIEW_GRAMMARVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM "&Highlight Mode\tCtrl+H",     ID_HIGHLIGHTING
+        MENUITEM "No&de Variable Mode",         ID_VIEW_TREESEMANTICSMODE
+        MENUITEM "&Offsets Mode",               ID_VIEW_TREEOFFSETSMODE
+        MENUITEM "Tree Te&xt Mode",             32944, CHECKED
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "&Verbose Mode",               ID_VERBOSE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Next Text",                  ID_NEXT_TEXT
+        MENUITEM "&Previous Text",              ID_PREV_TEXT
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
+        MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW, GRAYED
+        MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Browser",                ID_NEW_BROWSER
+        MENUITEM "&Save URL Text",              ID_ADD_URL
+    END
+    POPUP "&Parse Tree"
+    BEGIN
+        MENUITEM "&Close All",                  ID_PARSETREE_CLOSEALL
+        MENUITEM "&Open All",                   ID_PARSETREE_OPENALL
+        MENUITEM "Open &Item All",              ID_PARSETREE_OPENITEMALL
+        MENUITEM "Open One &Level",             ID_PARSETREE_OPENONELEVEL
+        MENUITEM SEPARATOR
+        MENUITEM "&Highlight Text",             ID_PARSETREE_HIGHLIGHTTEXT
+        MENUITEM "Display as &Root",            ID_PARSETREE_MAKEITEMROOT
+        MENUITEM "Display &Entire Tree",        ID_PARSETREE_DISPLAYENTIRETREE
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Selected Node in Files", ID_PARSETREE_FIND
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+            MENUITEM "Visual Studio 2008",          ID_THEME_VISUALSTUDIO2008
+            MENUITEM "Visual Studio 2010",          ID_THEME_VISUALSTUDIO2010
+        END
+        MENUITEM "Rule Edit Options",           ID_TOOLS_RULEEDITOPTIONS
+        MENUITEM "&ASCII Table",                ID_TOOLS_ASCIITABLE
+        MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TOOLS_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TOOLS_KBATTRIBUTES
+            MENUITEM "&Lookup",                     65535
+        END
+        MENUITEM "&Email Tool",                 ID_TOOLS_EMAIL
+        MENUITEM "&Hex Viewer",                 ID_TOOLS_HEXVIEWER
+        MENUITEM "&Text File Info",             ID_TOOLS_TEXTFILEINFO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+    END
+END
+
+IDR_GRAMMAR MENU
+BEGIN
+    POPUP "&Grammar"
+    BEGIN
+        POPUP "&Add"
+        BEGIN
+            MENUITEM "&Stub",                       ID_GRAMMAR_ADD_STUB
+            MENUITEM "&Folder",                     ID_GRAMMAR_ADD_FOLDER
+            MENUITEM "&Rule",                       ID_GRAMMAR_ADD_RULE
+            MENUITEM "&Label",                      ID_GRAMMAR_ADD_LABEL
+        END
+        MENUITEM "&Delete",                     ID_GRAMMAR_DELETECONCEPT
+        MENUITEM "Delete &Children",            ID_GRAMMAR_DELETECHILDREN
+        MENUITEM "&Find",                       ID_GRAMMAR_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "De&lete Samples",             ID_GRAMMAR_DELETESAMPLES
+        POPUP "&Sample File"
+        BEGIN
+            MENUITEM "&Export",                     ID_GRAMMAR_SAMPLEFILE_EXPORT
+            MENUITEM "&Import",                     ID_GRAMMAR_SAMPLEFILE_IMPORT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Attri&butes",                 ID_GRAMMAR_EDITATTRIBUTES
+        MENUITEM "Highlight &Matches",          ID_GRAMMAR_HIGHLIGHTMATCHES
+        MENUITEM "Mark for &Generation",        ID_GRAMMAR_MARKFORGENERATION
+        MENUITEM "Pass File",                   ID_GRAMMAR_EDITRULES
+        MENUITEM "&Properties",                 ID_GRAMMAR_PROPERTIES
+        MENUITEM "&View Parse Tree",            ID_GRAMMAR_VIEWTREE
+        MENUITEM SEPARATOR
+        POPUP "Gram Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_GRAMMAR_ARCHIVEGRAMMAR
+            MENUITEM "&Archive Remote",             ID_GRAMMAR_UPLOADGRAMMAR
+            MENUITEM "&View Local",                 ID_GRAMMAR_LOCALARCHIVE
+            MENUITEM "View &Remote",                ID_GRAMMAR_SERVERARCHIVES
+        END
+        MENUITEM "&Help",                       ID_GRAMMAR_HELP
+    END
+END
+
+IDR_LOGFILE MENU
+BEGIN
+    POPUP "&Log File"
+    BEGIN
+        MENUITEM "&Find Selected Text",         ID_LOGFILE_FINDLOCAL
+        MENUITEM "Find &Again",                 ID_LOGFILE_FINDAGAIN
+        MENUITEM "Find in Pa&ss File",          ID_LOGFILE_FINDINRULEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "View &Parse Tree",            ID_LOGFILE_VIEWLOGTREE
+        MENUITEM "View &Current Pass File",     ID_LOGFILE_VIEWRULEFILE
+    END
+END
+
+IDR_TEXTVIEW MENU
+BEGIN
+    POPUP "&Text"
+    BEGIN
+        MENUITEM "View Tree of Selected",       ID_TEXT_DISPLAYTREE
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Selected Text ",        ID_TEXT_FINDLOCAL
+        MENUITEM "Find &Again",                 ID_TEXT_FINDAGAIN
+        MENUITEM "Fi&nd in Files",              ID_FIND_IN_FILES
+        MENUITEM "Find in &Log",                ID_LOGFILE_FINDINRULEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Rest",                 ID_RULEFILE_CLOSEREST
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TEXT_DICTIONARY_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TEXT_DICTIONARY_KBATTRIBUTES
+            MENUITEM "&Lookup",                     65535
+        END
+        MENUITEM "&Generate Rule",              ID_TEXT_GENERATERULE
+        MENUITEM "&Run",                        ID_TEXTVIEW_SELECTANDRUN
+        MENUITEM "Sort &Unique Text",           ID_TEXT_SORTTEXT
+        POPUP "&Tools"
+        BEGIN
+            MENUITEM "&ASCII Table",                ID_TEXT_TOOLS_ASCIITABLE
+            MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+            MENUITEM "&Dictionize",                 ID_TEXT_TOOLS_DICTIONIZE
+            MENUITEM "&Email Tool",                 ID_TEXT_EMAIL
+            MENUITEM "&Hex Viewer",                 ID_TEXT_TOOLS_HEXVIEWER
+            MENUITEM "&Jumble",                     ID_TEXT_TOOLS_JUMBLE
+            MENUITEM "&Mask",                       ID_TEXT_TOOLS_MASK
+            MENUITEM "&Text File Info",             ID_TEXT_TOOLS_TEXTFILEINFO
+        END
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Parse Tree",                 ID_TEXT_VIEWENTIRETREE
+            MENUITEM "&Output File",                ID_TEXT_VIEWOUTPUT
+            MENUITEM "&Tree of Selected",           ID_TEXT_DISPLAYTREE
+        END
+        MENUITEM "&Wrap Text",                  ID_TEXT_WRAPTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &As",                    ID_FILE_SAVE_AS
+    END
+END
+
+IDR_DEBUG MENU
+BEGIN
+    POPUP "&Logging"
+    BEGIN
+        MENUITEM "&Clear",                      ID_LOGGING_CLEARLOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       ID_LOGGING_HELP
+    END
+END
+
+IDR_FIND MENU
+BEGIN
+    POPUP "&Find Menu"
+    BEGIN
+        MENUITEM "&Clear",                      ID_FINDMENU_CLEAR
+        MENUITEM "&Go to",                      ID_FINDMENU_OPEN
+    END
+END
+
+IDR_OUTPUT MENU
+BEGIN
+    POPUP "&Output Menu"
+    BEGIN
+        MENUITEM "Add &Record",                 ID_OUTPUTMENU_ADDOUTPUT
+        MENUITEM "Add &Field",                  ID_OUTPUTMENU_ADDITEM
+        MENUITEM "&Delete",                     ID_OUTPUTMENU_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Attri&butes",                 ID_OUTPUTMENU_EDITATTRIBUTES
+        MENUITEM "&Properties",                 ID_OUTPUTMENU_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Archive Output",             ID_OUTPUTMENU_ARCHIVEOUTPUT
+        MENUITEM "&Local Archive",              ID_OUTPUTMENU_LOCALARCHIVE
+        MENUITEM "&Server Archive",             ID_OUTPUTMENU_SERVERARCHIVE
+        MENUITEM "&UploadOutput",               ID_OUTPUTMENU_UPLOADOUTPUT
+    END
+END
+
+IDR_SAMPLE MENU
+BEGIN
+    POPUP "&Sample Menu"
+    BEGIN
+        MENUITEM "&Generate Samples",           ID_SAMPLEMENU_GENERATESAMPLES
+        MENUITEM "&Sort to Unique",             ID_SAMPLEMENU_SORT
+    END
+END
+
+IDR_PARSETREE_POPUP MENU
+BEGIN
+    POPUP "&Parse Tree"
+    BEGIN
+        MENUITEM "&Close All",                  ID_PARSETREE_CLOSEALL
+        MENUITEM "&Open All",                   ID_PARSETREE_OPENALL
+        MENUITEM "Open &Item All",              ID_PARSETREE_OPENITEMALL
+        MENUITEM "Open One &Level",             ID_PARSETREE_OPENONELEVEL
+        MENUITEM SEPARATOR
+        MENUITEM "&Highlight Text",             ID_PARSETREE_HIGHLIGHTTEXT
+        MENUITEM "Display as &Root",            ID_PARSETREE_MAKEITEMROOT
+        MENUITEM "Display &Entire Tree",        ID_PARSETREE_DISPLAYENTIRETREE
+        MENUITEM "View Rule Fired",             ID_PARSETREE_VIEWRULEFIRED
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Selected Node in Files", ID_PARSETREE_FIND
+    END
+END
+
+IDR_KNOWLEDGE MENU
+BEGIN
+    POPUP "&Knowledge"
+    BEGIN
+        MENUITEM "Attri&butes",                 ID_KNOWLEDGE_ATTRIBUTES
+        MENUITEM "Display as Roo&t",            ID_KNOWLEDGE_MAKEROOT
+        MENUITEM "Display &Entire KB",          ID_KNOWLEDGE_GENERATEALL
+        MENUITEM "Display &Parent as Root",     ID_KNOWLEDGE_UP
+        MENUITEM "&Phrase Tool",                ID_KNOWLEDGE_PHRASES
+        MENUITEM "Re&fresh",                    ID_KNOWLEDGE_UPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "Add &Concept(s)",             ID_KNOWLEDGE_ADDCONCEPTS
+        MENUITEM "Add &Node",                   ID_KNOWLEDGE_ADDPHRASE
+        MENUITEM "&Delete",                     ID_KNOWLEDGE_DELETE
+        MENUITEM "De&lete Children",            ID_KNOWLEDGE_DELETECHILDREN
+        POPUP "&Modular"
+        BEGIN
+            MENUITEM "&Load",                       ID_KNOWLEDGE_KBMODULAR_LOAD
+            MENUITEM "&Save",                       ID_KNOWLEDGE_KBMODULAR_SAVE
+        END
+        MENUITEM "&Save",                       ID_KNOWLEDGE_SAVE
+    END
+END
+
+IDR_KNOWLEDGE_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open\tCtrl+O",                ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "Save Analyzer &As",           ID_FILE_SAVEANALYZERAS
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "&Recent Files"
+        BEGIN
+            MENUITEM "&Recent Files",               ID_FILE_MRU_FILE1
+        END
+        POPUP "Recent Anal&yzers"
+        BEGIN
+            MENUITEM "Recent Analyzer",             ID_FILE_RECENTANALYZERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Fi&nd in Files",              ID_TOOLS_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Compile Analyzer",           ID_ANALYZER_COMPILEANALYZER
+        POPUP "&Generate Rules"
+        BEGIN
+            MENUITEM "&All\tCtrl+G",                ID_ANALYZER_GENERATEALL
+            MENUITEM "&Dirty",                      ID_ANALYZER_GENERATEDIRTY
+            MENUITEM "&Unlocked",                   ID_ANALYZER_GENERATEUNLOCKED
+        END
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "Sl&og\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "&Stop",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "Generate &Logs\tCtrl+L",      ID_GENERATELOGS
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+            MENUITEM "Current &Text",               ID_PROCESSED_TEXT
+            MENUITEM "&Dump Files",                 ID_DUMP
+            MENUITEM "&Output File",                ID_OUTPUT
+            MENUITEM "&Parse Tree",                 ID_TREE
+            MENUITEM "Pass &File",                  ID_RULE_FILE
+            MENUITEM "&Web Page",                   ID_WEBPAGE
+        END
+    END
+    POPUP "&KB"
+    BEGIN
+        MENUITEM "KB &Editor",                  ID_KNOWLEDGE_BASE
+        MENUITEM "&Attribute Editor",           ID_ATTRIBUTEEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Compile KB",                 ID_KB_COMPILEKB
+        MENUITEM "Move Concept &Up",            ID_KB_UP
+        MENUITEM "Move Concept &Down",          ID_KB_DOWN
+        MENUITEM "&Save KB",                    ID_SAVE_KB
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM "&Highlight Mode\tCtrl+H",     ID_HIGHLIGHTING
+        MENUITEM "No&de Variable Mode",         ID_VIEW_TREESEMANTICSMODE
+        MENUITEM "&Offsets Mode",               ID_VIEW_TREEOFFSETSMODE
+        MENUITEM "Tree Te&xt Mode",             ID_VIEW_TREETEXTMODE, CHECKED
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "&Verbose Mode",               ID_VERBOSE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Next Text",                  ID_NEXT_TEXT
+        MENUITEM "&Previous Text",              ID_PREV_TEXT
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
+        MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW, GRAYED
+        MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Browser",                ID_NEW_BROWSER
+        MENUITEM "&Save URL Text",              ID_ADD_URL
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+            MENUITEM "Visual Studio 2008",          ID_THEME_VISUALSTUDIO2008
+            MENUITEM "Visual Studio 2010",          ID_THEME_VISUALSTUDIO2010
+        END
+        MENUITEM "&ASCII Table",                ID_TOOLS_ASCIITABLE
+        MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TOOLS_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TOOLS_KBATTRIBUTES
+            MENUITEM "&Lookup",                     65535
+        END
+        MENUITEM "&Email Tool",                 ID_TOOLS_EMAIL
+        MENUITEM "&Hex Viewer",                 ID_TOOLS_HEXVIEWER
+        MENUITEM "&Text File Info",             ID_TOOLS_TEXTFILEINFO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+    END
+END
+
+IDR_BROWSER MENU
+BEGIN
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_BROWSER_BACK
+        MENUITEM "&Save as Text",               ID_BROWSER_SAVEASTEXT
+    END
+END
+
+IDR_TEXT_EDITOR MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open...\tCtrl+O",             ID_FILE_OPEN
+        MENUITEM "Close\tCtrl+E",               ID_FILE_CLOSE
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save As\tCtrl+T",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "R&ecent Files"
+        BEGIN
+            MENUITEM "",                            ID_FILE_MRU_FILE1
+        END
+        MENUITEM "Recent Anal&yzers",           65535
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND, GRAYED
+        MENUITEM "R&eplace",                    ID_EDIT_REPLACE
+        MENUITEM "Fi&nd in Files",              ID_TOOLS_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "S&log\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "S&top",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "&Settings",                   ID_ANALYZER_SETTINGS
+    END
+    POPUP "&KB"
+    BEGIN
+        MENUITEM "&Editor",                     ID_KNOWLEDGE_BASE
+        MENUITEM "Move &Up",                    ID_KB_UP
+        MENUITEM "Move &Down",                  ID_KB_DOWN
+        MENUITEM "&Save",                       ID_SAVE_KB
+        MENUITEM "",                            1
+        MENUITEM "Generate &All\tCtrl+G",       ID_ANALYZER_GENERATEALL
+        MENUITEM "Generate &Dirty",             ID_ANALYZER_GENERATEDIRTY
+        MENUITEM "Generate &Unlocked",          ID_ANALYZER_GENERATEUNLOCKED
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Concepts\tCtrl+H",           ID_HIGHLIGHTING
+        MENUITEM "&Log\tCtrl+L",                ID_GENERATELOGS
+        MENUITEM "&Verbose Analyzer",           ID_VERBOSE_MODE
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "Browse &Next",                ID_NEXT_TEXT
+        MENUITEM "Browse &Previous",            ID_PREV_TEXT
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Add URL Text",               ID_ADD_URL
+        MENUITEM "&Run on HTML",                ID_RUN_HTML
+        MENUITEM "&Spider",                     ID_SPIDER
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+        MENUITEM "&Dump",                       ID_DUMP
+        MENUITEM "&Full Tree",                  ID_TREE
+        MENUITEM "Live &Web Page",              ID_WEBPAGE
+        MENUITEM "&Output File",                ID_OUTPUT
+        MENUITEM "&Rules File",                 ID_RULE_FILE
+        MENUITEM "&Processed Text",             ID_PROCESSED_TEXT
+        MENUITEM "Slot &Fill",                  ID_SLOT_FILL, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Browser Toolbar",            ID_TOOLS_BROWSERTOOLBAR
+        MENUITEM "&Debug Toolbar",              ID_TOOLS_DEBUGTOOLBAR
+        MENUITEM "&KB Toolbar",                 ID_TOOLS_KBTOOLBAR
+        MENUITEM "&Tab Toolbar",                ID_TOOLS_TABTOOLBAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+    END
+    MENUITEM "Te&xtEditor",                 65535
+END
+
+IDR_DICTIONARY_WORDS MENU
+BEGIN
+    POPUP "&Dictionary Words"
+    BEGIN
+        POPUP "&noun"
+        BEGIN
+            MENUITEM "&count",                      ID_DICTIONRAYWORDS_MARKAS_NOUN_COUNT
+            MENUITEM "&no count",                   ID_DICTIONRAYWORDS_MARKAS_NOUN_NOCOUNT
+            MENUITEM "&both",                       ID_DICTIONRAYWORDS_MARKAS_NOUN_BOTH
+        END
+        POPUP "&verb"
+        BEGIN
+            MENUITEM "&transitive",                 ID_DICTIONRAYWORDS_MARKAS_VERB_TRANSITIVE
+            MENUITEM "&intransitive",               ID_DICTIONRAYWORDS_MARKAS_VERB_INTRANSITIVE
+        END
+        MENUITEM "&adjective",                  ID_DICTIONRAYWORDS_MARKAS_ADJECTIVE
+        MENUITEM "a&dverb",                     ID_DICTIONRAYWORDS_MARKAS_ADVERB
+    END
+END
+
+IDR_LOG MENU
+BEGIN
+    POPUP "&Find Menu"
+    BEGIN
+        MENUITEM "&Clear",                      ID_LOGMENU_CLEAR
+        MENUITEM "&Open",                       ID_LOGMENU_OPEN
+    END
+END
+
+IDR_ANALYZE_LOG MENU
+BEGIN
+    POPUP "&Analyze Log Menu"
+    BEGIN
+        MENUITEM "&Clear",                      ID_ANALYZELOGMENU_CLEAR
+    END
+END
+
+IDR_SYNTAXEDIT_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_FILE_NEW
+        MENUITEM "Open\tCtrl+O",                ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&New Analyzer",               ID_FILE_NEWANALYZER
+        MENUITEM "&Open Analyzer",              ID_FILE_OPENANALYZER
+        MENUITEM "&Save Analyzer",              ID_FILE_SAVEANALYZER
+        MENUITEM "Save Analyzer &As",           ID_FILE_SAVEANALYZERAS
+        MENUITEM "&Close Analyzer",             ID_FILE_CLOSEANALYZER
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
+        MENUITEM "Page / Print Set&up...",      ID_PAGE_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Analyzer Arch&ive"
+        BEGIN
+            MENUITEM "Archive &Local",              ID_FILE_ARCHIVES_ARCHIVEANALYZER
+            MENUITEM "&Archive Remote",             ID_FILE_ARCHIVES_UPLOADANALYZER
+            MENUITEM "&View Local",                 ID_FILE_ARCHIVES_LOCAL_ARCHIVE
+            MENUITEM "View &Remote",                ID_FILE_ARCHIVES_SERVERARCHIVE
+        END
+        POPUP "&Recent Files"
+        BEGIN
+            MENUITEM "&Recent Files",               ID_FILE_MRU_FILE1
+        END
+        POPUP "Recent Anal&yzers"
+        BEGIN
+            MENUITEM "Recent Analyzer",             ID_FILE_RECENTANALYZERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&ferences",                ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "Save &All",                   ID_SAVE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Fi&nd in Files",              ID_TOOLS_FIND
+        MENUITEM "Rep&lace in Files",           ID_REPLACE_IN_FILES
+    END
+    POPUP "&Analyzer"
+    BEGIN
+        MENUITEM "&Compile Analyzer",           ID_ANALYZER_COMPILEANALYZER
+        POPUP "&Generate Rules"
+        BEGIN
+            MENUITEM "&All\tCtrl+G",                ID_ANALYZER_GENERATEALL
+            MENUITEM "&Dirty",                      ID_ANALYZER_GENERATEDIRTY
+            MENUITEM "&Unlocked",                   ID_ANALYZER_GENERATEUNLOCKED
+        END
+        MENUITEM "&Run\tCtrl+R",                ID_RUN
+        MENUITEM "Run &Next",                   ID_RUN_NEXT
+        MENUITEM "Sl&og\tCtrl+J",               ID_GEN_DIRTY_AND_RUN
+        MENUITEM "&Stop",                       ID_STOP_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "Generate &Logs\tCtrl+L",      ID_GENERATELOGS
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Concept Tree",               ID_TREE_CONCEPT
+            MENUITEM "Current &Text",               ID_PROCESSED_TEXT
+            MENUITEM "&Dump Files",                 ID_DUMP
+            MENUITEM "&Output File",                ID_OUTPUT
+            MENUITEM "&Parse Tree",                 ID_TREE
+            MENUITEM "Pass &File",                  ID_RULE_FILE
+            MENUITEM "&Web Page",                   ID_WEBPAGE
+        END
+    END
+    POPUP "Rule Editor"
+    BEGIN
+        MENUITEM "Options",                     ID_TOOLS_OPTIONS
+        POPUP "&Add/Remove"
+        BEGIN
+            MENUITEM "&except",                     ID_RULEFILE_ADD_EXCEPT
+            MENUITEM "&fails",                      ID_RULEFILE_ADD_FAILS
+            MENUITEM "&layer",                      ID_RULEFILE_ADDREMOVE_LAYER
+            MENUITEM "loo&kahead",                  ID_RULEFILE_ADDREMOVE_LOOKAHEAD
+            MENUITEM "&matches",                    ID_RULEFILE_ADD_MATCHES
+            MENUITEM "ma&x",                        ID_RULEFILE_ADDREMOVE_MAX
+            MENUITEM "mi&n",                        ID_RULEFILE_ADDREMOVE_MIN
+            MENUITEM "&one",                        ID_RULEFILE_ADDREMOVE_ONE
+            MENUITEM "opt&ional",                   ID_RULEFILE_ADD_OPTIONAL
+            MENUITEM "&plus",                       ID_RULEFILE_ADDREMOVE_PLUS
+            MENUITEM "sta&r",                       ID_RULEFILE_ADD_STAR
+            MENUITEM "&s",                          ID_RULEFILE_ADDREMOVE_S
+            MENUITEM "&tree",                       ID_RULEFILE_ADDREMOVE_TREE
+            MENUITEM "tri&g",                       ID_RULEFILE_ADDREMOVE_TRIG
+        END
+        POPUP "&Change to"
+        BEGIN
+            MENUITEM "_x&ALPHA",                    ID_RULEFILE_CHANGE_XALPHA
+            MENUITEM "_x&NUM",                      ID_RULEFILE_CHANGE_XNUM
+            MENUITEM "_x&WHITE",                    ID_RULEFILE_CHANGETO_XWHITE
+            MENUITEM "_xWIL&D",                     ID_RULEFILE_CHANGE_XWILD
+        END
+        MENUITEM "Comment/&Uncomment",          ID_RULEFILE_COMMENTUNCOMMENT
+        POPUP "Con&vert"
+        BEGIN
+            MENUITEM "&One Line to Standard Rule Format", ID_RULEFILE_CONVERT_ONELINETOMULTIPLE
+            MENUITEM "String to &Literal Rule",     ID_RULEFILE_STRINGTORULE
+            MENUITEM "String to &General Rule",     ID_RULEFILE_CONVERT_STRINGTOGENERALRULE
+        END
+        MENUITEM "&Delete Line",                ID_RULEFILE_DELETELINE
+        MENUITEM "Du&plicate Line",             ID_RULEFILE_DUPLICATELINE
+        POPUP "&Insert"
+        BEGIN
+            MENUITEM "_x&ALPHA",                    ID_RULEFILE_INSERT_XALPHA
+            MENUITEM "_xNUM",                       ID_RULEFILE_INSERT_XNUM
+            MENUITEM "_x&PUNCT",                    ID_RULEFILE_INSERT_XPUNCT
+            MENUITEM "_x&WHITE",                    ID_RULEFILE_INSERT_XWHITE
+            MENUITEM SEPARATOR
+            MENUITEM "@POS&T",                      ID_RULEFILE_INSERT_POST
+            MENUITEM "@POST @&RULE",                ID_RULEFILE_INSERT_POSTRULE
+            MENUITEM "@RU&LES -> _xALPHA",          ID_RULEFILE_INSERT_RULES
+            MENUITEM SEPARATOR
+            MENUITEM "&Dump Phrase to File",        ID_RULEFILE_INSERT_DUMPFILE
+            MENUITEM "&Header",                     ID_RULEFILE_HEADER
+        END
+        POPUP "Insert &Line"
+        BEGIN
+            MENUITEM "_x&ALPHA",                    ID_RULEFILE_INSERTLINE_XALPHA
+            MENUITEM "_x&NUM",                      ID_RULEFILE_INSERTLINE_XNUM
+            MENUITEM "_x&START",                    ID_RULEFILE_INSERTLINE_XSTART
+            MENUITEM "_x&WHITE",                    ID_RULEFILE_INSERTLINE_XWHITE
+            MENUITEM "_xWIL&D",                     ID_RULEFILE_INSERTLINE_XWILD
+        END
+        MENUITEM "&Reformat Standard Rule",     ID_RULEFILE_CONVERT_REFORMATRULE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Analyzer View",               ID_VIEW_ANALYZERVIEW
+        MENUITEM "Text View",                   ID_VIEW_TEXTVIEW
+        MENUITEM "Grammar View",                ID_VIEW_GRAMMARVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Batch Mode\tCtrl+B",         ID_BATCH_MODE
+        MENUITEM "&Highlight Mode\tCtrl+H",     ID_HIGHLIGHTING
+        MENUITEM "No&de Variable Mode",         ID_VIEW_TREESEMANTICSMODE
+        MENUITEM "&Offsets Mode",               ID_VIEW_TREEOFFSETSMODE
+        MENUITEM "Tree Te&xt Mode",             ID_VIEW_TREETEXTMODE, CHECKED
+        MENUITEM "Pa&ge Mode\tCtrl+Shift+P",    ID_PAGE_MODE
+        MENUITEM "&Verbose Mode",               ID_VERBOSE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Next Text",                  ID_NEXT_TEXT
+        MENUITEM "&Previous Text",              ID_PREV_TEXT
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
+        MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW, GRAYED
+        MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_VIEW_OPTIONS
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "&Back",                       ID_OPTIONS_BACK
+        MENUITEM "&Forward",                    ID_OPTIONS_FORWARD
+        MENUITEM "&Open URL",                   ID_BROWSER_OPENURL
+        MENUITEM "S&top",                       ID_OPTIONS_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Browser",                ID_NEW_BROWSER
+        MENUITEM "&Save URL Text",              ID_ADD_URL
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+            MENUITEM "Visual Studio 2008",          ID_THEME_VISUALSTUDIO2008
+            MENUITEM "Visual Studio 2010",          ID_THEME_VISUALSTUDIO2010
+        END
+        MENUITEM "Rule Edit Options",           ID_TOOLS_RULEEDITOPTIONS
+        MENUITEM "&ASCII Table",                ID_TOOLS_ASCIITABLE
+        MENUITEM "&Character Viewer",           ID_TOOLS_CHARACTERVIEWER
+        POPUP "&Dictionary"
+        BEGIN
+            MENUITEM "&Add Word",                   ID_TOOLS_ADDWORDS
+            MENUITEM "&KB Attributes",              ID_TOOLS_KBATTRIBUTES
+            MENUITEM "&Lookup",                     65535
+        END
+        MENUITEM "&Email Tool",                 ID_TOOLS_EMAIL
+        MENUITEM "&Hex Viewer",                 ID_TOOLS_HEXVIEWER
+        MENUITEM "&Text File Info",             ID_TOOLS_TEXTFILEINFO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "VisualText &Help",            ID_HELP_VISUALTEXTHELP
+        MENUITEM "&Context Help",               ID_CONTEXT_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About VisualText...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "W",            ID_ACCEL33235,          VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_ANALYZER_GENERATEALL, VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_BATCH_MODE,          VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_FILE_SAVE_AS,        VIRTKEY, CONTROL, NOINVERT
+    "J",            ID_GEN_DIRTY_AND_RUN,   VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_GENERATELOGS,        VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_HIGHLIGHTING,        VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    "P",            ID_PAGE_MODE,           VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_RULEFILE_HELPONSELECTION, VIRTKEY, NOINVERT
+    "R",            ID_RUN,                 VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_FIND_FORWARD,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,1,0,0
+ PRODUCTVERSION 3,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Text Analysis International"
+            VALUE "FileDescription", "VisualText MFC Application"
+            VALUE "FileVersion", "3.1.0.0"
+            VALUE "InternalName", "VisualText"
+            VALUE "LegalCopyright", "Copyright © 1999-2017"
+            VALUE "OriginalFilename", "VisualText.EXE"
+            VALUE "ProductName", "VisualText IDE"
+            VALUE "ProductVersion", "3.1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 257, 251
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VisualText"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,207,50,14,WS_GROUP
+    CTEXT           "Version Number Here!",IDC_VERSION,6,207,98,14,SS_NOPREFIX | SS_CENTERIMAGE | WS_BORDER
+    EDITTEXT        IDC_TXT_COPYRIGHT,6,167,243,37,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "Static",IDC_TXT_URL,6,228,124,8
+    LTEXT           "Static",IDC_TXT_EMAIL,159,228,90,8,0,WS_EX_RIGHT
+    CONTROL         IDB_SPLASH,IDC_STATIC,"Static",SS_BITMAP,8,4,240,156
+END
+
+IDD_ARCHIVE_LIST_DIALOG DIALOGEX 0, 0, 281, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Archive"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_ARCHIVE_LIST,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,7,7,267,104
+    PUSHBUTTON      "&Delete",IDC_DELETE,7,138,42,14
+    PUSHBUTTON      "&Rename",IDC_RENAME,49,138,42,14
+    PUSHBUTTON      "Do&wnload",IDC_DOWNLOAD,91,138,42,14
+    PUSHBUTTON      "&Load",IDC_LOAD,133,138,42,14
+    PUSHBUTTON      "Don&e",IDCANCEL,232,138,42,14
+    PUSHBUTTON      "...",IDC_BROWSE,7,115,16,14
+    LTEXT           "Static",IDC_PATH,29,116,245,13,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_ARCHIVE_PROGRESS DIALOG 0, 0, 186, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Archive Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,25,40,134,8
+    CTEXT           "Archiving...",IDC_ARCHIVE_MESSAGE,7,7,172,9
+    CTEXT           "Progress Message",IDC_ARCHIVE_PROGRESS_MESSAGE,7,19,172,9
+    PUSHBUTTON      "Cancel",IDC_CANCEL,67,58,50,14
+END
+
+IDD_ASK_TEXT_DIALOG DIALOG 0, 0, 186, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Enter &File name:",IDC_MSG,7,7,172,32
+    EDITTEXT        IDC_USER_TEXT,7,41,172,26,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,43,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,72,50,14
+END
+
+IDD_VISUALTEXT_PREFERENCES DIALOG 0, 0, 247, 204
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VisualText Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,98,183,50,14
+    CONTROL         "",IDC_PREF_PROP_SHEET,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,6,7,216,130
+END
+
+IDD_ATTRIBUTE_EDITOR DIALOGEX 0, 0, 453, 254
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Attribute Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_ATTRIBUTE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_EDITLABELS | LVS_OWNERDRAWFIXED | WS_BORDER | WS_TABSTOP,7,7,226,129
+    PUSHBUTTON      "Add A&ttribute",IDC_ADD,11,147,54,14
+    PUSHBUTTON      "Add &Value",IDC_ADDVALUE,66,147,42,14
+    PUSHBUTTON      "&Delete",IDC_DELETE,196,147,33,14
+    CONTROL         "&no attrs",IDC_NO_ATTRS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,168,36,8
+    PUSHBUTTON      "&Quick Edit >>",IDC_QUICKEDIT,183,232,50,14
+    CONTROL         "ATTR_PREV",IDC_PREV,"Button",BS_OWNERDRAW | BS_BITMAP | WS_GROUP | WS_TABSTOP,48,164,16,14
+    CONTROL         "ATTR_NEXT",IDC_NEXT,"Button",BS_OWNERDRAW | BS_BITMAP | WS_GROUP | WS_TABSTOP,64,164,16,14
+    CONTROL         "ATTR_KB",IDC_OPEN_KB,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,7,232,15,14
+    CONTROL         "ATTR_LOOKUP",IDC_LOOKUP,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,13,193,15,14
+    COMBOBOX        IDC_COMBO_LOOKUP,32,194,74,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    EDITTEXT        IDE_SEARCH,109,194,120,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "&Add",IDC_ADD_WORD,13,209,20,14
+    CONTROL         "ATTR_DELETE_WORD",IDC_DELETE_WORD,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,33,209,16,14
+    PUSHBUTTON      "&Search",IDC_SEARCH,49,209,28,14,WS_GROUP
+    DEFPUSHBUTTON   "Don&e",IDOK,149,232,28,14
+    CONTROL         "List1",IDC_LISTQUICKEDIT,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,241,7,132,239
+    GROUPBOX        "Quick Edit",IDC_QUICK_EDIT_BOX,380,3,66,157,BS_CENTER
+    CTEXT           "Table",IDC_STATIC_TABLE,395,12,27,8
+    LTEXT           "Attri&bute:",IDC_STATIC_ATTRIBUTE,387,24,51,8
+    EDITTEXT        IDE_ATTRIBUTE,387,33,51,14,ES_AUTOHSCROLL
+    LTEXT           "Va&lue:",IDC_STATIC_VALUE,387,50,51,8
+    EDITTEXT        IDE_VALUE,387,61,51,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Add",IDB_ADD,387,84,51,14
+    PUSHBUTTON      "&Remove",IDB_REMOVE,387,98,51,14
+    PUSHBUTTON      "&Update",IDB_UPDATE,387,118,51,14
+    PUSHBUTTON      "&Help",IDB_QUICKEDITHELP,387,137,51,14
+    PUSHBUTTON      "<< &KB Edit",IDB_KB_EDIT,395,232,51,14
+    CONTROL         "ATTR_DOWN",IDC_DOWN,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,28,164,16,14
+    CONTROL         "ATTR_UP",IDC_UP,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,11,164,16,14
+    CONTROL         "Browse",IDC_BROWSE_CONCEPT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,168,39,10
+    COMBOBOX        IDC_VALUE_TYPE,111,147,48,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Dictionary Tools",IDC_DICTIONARY_TOOLS_BOX,7,184,226,45
+    GROUPBOX        "Attributes",IDC_ATTRIBUTE_BOX,7,137,226,46
+END
+
+IDD_NEW_ANALYZER DIALOG 0, 0, 282, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Analyzer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Analyzer Name:",IDC_STATIC,19,17,57,10
+    EDITTEXT        IDC_ANALYZER_NAME,89,16,172,13,ES_AUTOHSCROLL
+    LTEXT           "&Location:",IDC_STATIC,19,41,53,10
+    EDITTEXT        IDC_LOCATION,89,39,172,13,ES_AUTOHSCROLL
+    LTEXT           "&Template:",IDC_STATIC,19,60,67,8
+    CONTROL         "List1",IDC_TEMPLATE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,89,61,172,75
+    DEFPUSHBUTTON   "OK",IDOK,7,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,119,50,14
+END
+
+IDD_RECORD_PROPERTIES DIALOG 0, 0, 229, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Record Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Name:",IDC_STATIC,7,7,24,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_RECORD_NAME,45,7,136,14,ES_AUTOHSCROLL
+    LTEXT           "&Label:",IDC_STATIC,7,26,20,8
+    EDITTEXT        IDC_LABEL,46,24,135,14,ES_AUTOHSCROLL
+    LTEXT           "&Order By:",IDC_STATIC,7,41,32,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_ORDER_BY,46,41,143,84,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Zone",IDC_ZONE_BUTTON,7,57,34,14
+    LTEXT           "&First:",IDC_STATIC,7,99,20,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIRST,31,98,26,12,ES_AUTOHSCROLL
+    CONTROL         "&Include Last",IDC_INCLUDE_LAST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,97,58,13
+    DEFPUSHBUTTON   "Don&e",IDOK,172,96,50,14
+    LTEXT           "",IDC_ZONE,45,59,177,28
+END
+
+IDD_TREE_CHOOSE DIALOG 0, 0, 242, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tree Choose"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_CHOICES,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,7,7,228,158
+    PUSHBUTTON      "&Up",IDC_UP,7,170,25,14
+    PUSHBUTTON      "&Children",IDC_CHILDREN,33,170,33,14
+    PUSHBUTTON      "&Uncheck All",IDC_UNCHECK,67,170,45,14
+    DEFPUSHBUTTON   "OK",IDOK,135,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,170,50,14
+END
+
+IDD_GRAM_CONCEPT DIALOG 0, 0, 221, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gram Concept Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Name:",IDC_STATIC,7,7,26,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,50,7,127,14,ES_AUTOHSCROLL
+    LTEXT           "Sample &File:",IDC_STATIC,7,30,39,8
+    EDITTEXT        IDC_SAMPLE_FILE,50,27,127,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BROWSE,180,27,32,14
+    GROUPBOX        "Attributes",IDC_STATIC,7,49,205,129
+    LTEXT           "On/Off",IDC_STATIC,69,56,23,8
+    LTEXT           "Inherited",IDC_STATIC,97,56,28,8
+    LTEXT           "&Locked",IDC_STATIC,21,67,25,8
+    CONTROL         "",IDC_LOCKED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,67,8,8
+    CONTROL         "",IDC_LOCKED_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,67,8,8
+    LTEXT           "&Closed",IDC_STATIC,21,80,36,8
+    CONTROL         "",IDC_CLOSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,80,8,8
+    CONTROL         "",IDC_CLOSED_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,80,8,8
+    LTEXT           "Con&strained",IDC_STATIC,21,93,38,8
+    CONTROL         "",IDC_CONSTRAINED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,93,8,8
+    CONTROL         "",IDC_CONSTRAINED_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,93,8,8
+    LTEXT           "&Generalized",IDC_STATIC,21,106,38,8
+    CONTROL         "",IDC_GENERALIZED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,104,8,8
+    CONTROL         "",IDC_GENERALIZED_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,104,8,8
+    LTEXT           "Li&teral",IDC_STATIC,21,117,20,8
+    CONTROL         "",IDC_LITERAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,117,8,8
+    CONTROL         "",IDC_LITERAL_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,117,8,8
+    LTEXT           "&Quick Semantics",IDC_STATIC,21,130,54,8
+    CONTROL         "",IDC_QUICKSEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,130,8,8
+    CONTROL         "",IDC_QUICKSEM_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,130,8,8
+    LTEXT           "&Raw",IDC_STATIC,21,142,16,8
+    CONTROL         "",IDC_RAW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,142,8,8
+    CONTROL         "",IDC_RAW_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,142,8,8
+    LTEXT           "&Split",IDC_STATIC,21,154,14,8
+    CONTROL         "",IDC_SPLIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,154,8,8
+    CONTROL         "",IDC_SPLIT_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,154,8,8
+    LTEXT           "&Whitespace",IDC_STATIC,21,166,39,8
+    CONTROL         "",IDC_WHITESPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,166,8,8
+    CONTROL         "",IDC_WHITESPACE_INHERITED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,166,8,8
+    CTEXT           "La&yered Label",IDC_STATIC,130,68,75,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_LAYER_STRING,128,79,80,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Don&e",IDOK,64,183,50,14
+    PUSHBUTTON      "&Help",IDC_HELP_RULE_GENERATION,123,183,34,14
+END
+
+IDD_OUTPUT_ITEM_DLG DIALOG 0, 0, 163, 108
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Field name:",IDC_STATIC,7,7,44,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIELD_NAME,52,7,104,14,ES_AUTOHSCROLL
+    LTEXT           "&Print name:",IDC_STATIC,7,22,43,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRINT_NAME,51,22,105,14,ES_AUTOHSCROLL
+    LTEXT           "&Type:",IDC_STATIC,7,39,41,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,51,39,105,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Normalized:",IDC_STATIC,7,57,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_NORMAL_FORM,51,56,105,30,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Done",IDOK,106,87,50,14
+END
+
+IDD_CHOOSE_SAMPLE DIALOG 0, 0, 248, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,207,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,207,50,14
+    RTEXT           "Static 1",IDC_STATIC_1,6,64,77,8
+    EDITTEXT        IDC_EDIT1,91,61,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,64,8,8
+    RTEXT           "Static 1",IDC_STATIC_2,6,80,77,8
+    EDITTEXT        IDC_EDIT2,91,77,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,80,8,8
+    RTEXT           "Static 1",IDC_STATIC_3,6,96,77,8
+    EDITTEXT        IDC_EDIT3,91,93,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,96,8,8
+    RTEXT           "Static 1",IDC_STATIC_4,6,112,77,8
+    EDITTEXT        IDC_EDIT4,91,109,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,112,8,8
+    RTEXT           "Static 1",IDC_STATIC_5,6,128,77,8
+    EDITTEXT        IDC_EDIT5,91,125,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,128,8,8
+    RTEXT           "Static 1",IDC_STATIC_6,6,144,77,8
+    EDITTEXT        IDC_EDIT6,91,141,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,144,8,8
+    RTEXT           "Static 1",IDC_STATIC_7,6,160,77,8
+    EDITTEXT        IDC_EDIT7,91,157,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,160,8,8
+    RTEXT           "Static 1",IDC_STATIC_8,6,176,77,8
+    EDITTEXT        IDC_EDIT8,91,173,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,176,8,8
+    RTEXT           "Static 1",IDC_STATIC_9,6,192,77,8
+    EDITTEXT        IDC_EDIT9,91,189,124,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,192,8,8
+    PUSHBUTTON      "Revert",IDC_REVERT,6,207,50,14
+    CTEXT           "",IDC_SAMPLE,6,7,227,20,SS_CENTERIMAGE
+    CONTROL         "Special",IDC_SPECIAL,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,6,45,39,10
+    CTEXT           "Drag",IDC_MOVE_ALL,75,30,32,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_DRAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,86,45,9,8
+    CTEXT           "Tear",IDC_TEAR,113,30,32,10,SS_CENTERIMAGE
+    CONTROL         "TEAR_UP",IDC_TEAR_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,113,42,16,14
+    CONTROL         "TEAR_DOWN",IDC_TEAR_DOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,129,42,16,14
+    CTEXT           "Join",IDC_JOIN,151,30,32,10,SS_CENTERIMAGE
+    CONTROL         "GATHER_UP",IDC_GATHER_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,152,42,16,14
+    CONTROL         "GATHER_DOWN",IDC_GATHER_DOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,168,42,16,14
+    CTEXT           "Move 1",IDC_MOVE_ONE,189,30,32,10,SS_CENTERIMAGE
+    CONTROL         "UP",IDC_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,190,42,16,14
+    CONTROL         "DOWN",IDC_DOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,206,42,16,14
+END
+
+IDD_SPLASH_DLG DIALOGEX 0, 0, 254, 233
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Version Number Here!",IDC_VERSION,7,181,240,45,SS_NOPREFIX | SS_SUNKEN
+    CTEXT           "Message",IDC_MESSAGE,7,165,240,13,SS_CENTERIMAGE
+    CONTROL         IDB_SPLASH,IDC_STATIC,"Static",SS_BITMAP,7,7,240,156
+END
+
+IDD_FIND_DLG DIALOGEX 0, 0, 252, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find in Files"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Find:",IDC_STATIC,20,7,16,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIND_STR,40,7,158,14,ES_AUTOHSCROLL
+    CONTROL         "&Match Case",IDC_MATCH_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,26,54,10
+    CONTROL         "A&ppend",IDC_APPEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,37,41,10
+    CONTROL         "&Pass Files",IDC_RULE_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,27,47,10
+    CONTROL         "All &Text Files",IDC_TEXT_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,38,55,10
+    CONTROL         "&Concepts",IDC_CONCEPTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,49,46,10
+    CONTROL         "&Output Files",IDC_OUTPUT_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,60,53,10
+    CONTROL         "&Log Files",IDC_LOG_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,71,44,10
+    LTEXT           "Other &Analyzer Pass Files:",IDC_STATIC,151,28,82,8
+    CONTROL         "List3",IDC_OTHER_RULE_FILES,"SysListView32",LVS_SMALLICON | LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,151,45,94,53
+    DEFPUSHBUTTON   "OK",IDOK,7,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,57,84,50,14
+    CONTROL         "Find 2",IDC_FIND2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,65,35,10
+END
+
+IDD_PASS_PROPERTIES_DLG DIALOG 0, 0, 160, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pass Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Name:",IDC_STATIC,7,9,22,8
+    EDITTEXT        IDC_NAME,36,7,117,14,ES_AUTOHSCROLL
+    LTEXT           "&Type:",IDC_STATIC,7,30,19,8
+    COMBOBOX        IDC_TYPE,36,28,74,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Set Active Flag",IDC_STATIC,7,50,146,53
+    CONTROL         "&Active",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,62,36,10
+    CONTROL         "To &End",IDC_TO_END,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,62,39,10
+    CONTROL         "A&ll",IDC_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,62,23,10
+    LTEXT           "From:",IDC_STATIC,42,84,18,8
+    COMBOBOX        IDC_FROM,63,82,33,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "To:",IDC_STATIC,102,84,12,8
+    COMBOBOX        IDC_TO,116,82,33,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,28,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,109,50,14
+END
+
+IDD_PHRASES_DLG DIALOG 0, 0, 296, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Phrase Tool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_LIST | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,282,141
+    PUSHBUTTON      "&Delete",IDC_DELETE,7,154,35,14
+    PUSHBUTTON      "Attri&butes",IDC_ATTRIBUTES,43,154,38,14
+    PUSHBUTTON      "&Add",IDC_ADD,82,154,24,14
+    CONTROL         "DRAG_UP",IDC_DRAG_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,107,154,16,14
+    CONTROL         "DRAG_DOWN",IDC_DRAG_DOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,124,154,16,14
+    DEFPUSHBUTTON   "Don&e",IDOK,189,154,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,239,154,50,14
+END
+
+IDD_SLOT_DLG DIALOG 0, 0, 215, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,57,124,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,114,124,50,14
+    CONTROL         "List1",IDC_OUTPUT_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,201,113
+END
+
+IDD_ARCHIVE_NAME_DLG DIALOGEX 0, 0, 276, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Archive"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Archive File:",IDC_STATIC,7,7,39,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_ARCHIVE_PATH,50,7,197,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,85,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,68,50,14
+    CONTROL         "&Log",IDC_SAVE_LOG_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,33,28,10
+    CONTROL         "&C Source",IDC_SAVE_C_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,45,45,10
+    PUSHBUTTON      "...",IDC_BROWSE,251,7,18,14
+    CONTROL         "&Input Files",IDC_INPUT_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,84,33,48,10
+    GROUPBOX        "Save Files",IDC_STATIC,27,25,223,35
+    CONTROL         "&KB",IDC_KB_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,84,45,25,10
+END
+
+IDD_TEXT_INFO DIALOG 0, 0, 230, 169
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text File Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,148,50,14
+    CTEXT           "Text File Information",IDC_STATIC,7,7,216,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Line count:",IDC_STATIC,24,84,67,8
+    RTEXT           "Word count:",IDC_STATIC,24,97,67,8
+    RTEXT           "Character count:",IDC_STATIC,24,110,67,8
+    RTEXT           "File size:",IDC_STATIC,24,123,67,8
+    RTEXT           "Created:",IDC_STATIC,43,48,49,8
+    LTEXT           "Static",IDC_LINE_COUNT,105,84,86,8
+    LTEXT           "Static",IDC_CHARACTER_COUNT,105,110,86,8
+    LTEXT           "Static",IDC_WORD_COUNT,105,97,86,8
+    LTEXT           "Static",IDC_FILE_SIZE,105,123,86,8
+    LTEXT           "Static",IDC_CREATED,103,48,96,8
+    CTEXT           "Static",IDC_FILE_PATH,7,26,216,18,SS_CENTERIMAGE
+    RTEXT           "Last modified:",IDC_STATIC,46,58,46,8
+    LTEXT           "Static",IDC_LAST_MODIFIED,103,58,96,8
+    GROUPBOX        "Content",IDC_STATIC,10,71,213,69
+END
+
+IDD_DICTIONARY_DLG DIALOG 0, 0, 297, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dictionary Tool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List2",IDC_DICTIONARY_LIST,"SysListView32",LVS_LIST | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | WS_BORDER | WS_TABSTOP,6,7,172,91
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,57,24,50,30
+    EDITTEXT        IDC_WORD,6,103,109,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Up",IDC_UP,120,103,15,14,BS_BITMAP
+    COMBOBOX        IDC_FIND_TYPE,138,103,48,51,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BACK_LETTER,6,119,12,14
+    PUSHBUTTON      "<",IDC_BACK,18,119,9,14
+    PUSHBUTTON      ">",IDC_FORWARD,28,119,10,14
+    PUSHBUTTON      ">>",IDC_FORWARD_LETTER,38,119,12,14
+    PUSHBUTTON      "Del",IDC_DELETE_WORD,53,119,21,14,WS_DISABLED
+    RTEXT           "Count",IDC_COUNT,87,121,48,8
+    COMBOBOX        IDC_ATTRS_DISPLAY,138,118,48,48,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_LIST | LVS_OWNERDRAWFIXED | WS_BORDER | WS_TABSTOP,199,7,91,91
+    PUSHBUTTON      ">>",IDC_MOVE_TO_LIST,182,17,13,14
+    PUSHBUTTON      "<<",IDC_TO_DICT,182,56,14,14
+    PUSHBUTTON      "Add",IDC_ADD_LIST,199,102,19,14
+    PUSHBUTTON      "Load",IDC_FILE,219,102,21,14
+    PUSHBUTTON      "Del",IDC_CLEAR_LIST,241,102,20,14
+    PUSHBUTTON      "Del All",IDC_CLEAR_ALL,262,102,27,14
+    CONTROL         "List1",IDC_ATTRIBUTES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,6,134,179,69
+    CONTROL         "Attributes",IDC_ATTRIBUTE_TOGGLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,138,45,10
+    PUSHBUTTON      "Add",IDC_ADD,189,158,48,14
+    PUSHBUTTON      "Delete",IDC_DELETE,189,173,48,14
+    PUSHBUTTON      "Delete All",IDC_DELETE_ALL,189,188,48,14
+    PUSHBUTTON      "Add to All",IDC_ADD_ALL,242,135,48,14
+    DEFPUSHBUTTON   "Close",IDOK,242,189,48,14
+END
+
+IDD_ASCII_DLG DIALOGEX 0, 0, 260, 194
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ASCII Table"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,102,173,50,14
+    EDITTEXT        IDC_ACSII_DISPLAY,7,7,246,160,ES_MULTILINE | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_CHAR_VIEWER DIALOGEX 0, 0, 306, 239
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Character Viewer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,127,218,50,14
+    EDITTEXT        IDC_CHAR_DISPLAY,7,7,292,209,ES_MULTILINE | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_EMAIL_DLG DIALOG 0, 0, 298, 239
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Email Tool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&To:",IDC_STATIC,7,7,12,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TO,42,7,249,14,ES_AUTOHSCROLL
+    LTEXT           "&Subject:",IDC_STATIC,7,23,27,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SUBJECT,42,23,249,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Email List &File:",IDC_EMAIL_LIST_CHOOSE,7,41,50,14
+    LTEXT           "Email &List",IDC_EMAIL_LIST,62,44,148,8
+    PUSHBUTTON      "<<",IDC_PREVIOUS_EMAIL,217,42,13,14
+    PUSHBUTTON      ">>",IDC_NEXT_EMAIL,232,42,13,14
+    RTEXT           "&Status",IDC_STATUS,251,44,40,8
+    EDITTEXT        IDC_BODY,7,58,284,154,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Send &Current",IDC_SEND_CURRENT,7,218,50,14
+    DEFPUSHBUTTON   "Send (&All)",IDOK,67,218,50,14
+    PUSHBUTTON      "Don&e",IDCANCEL,241,218,50,14
+END
+
+IDD_PREF_DISPLAY_PAGE DIALOGEX 0, 0, 228, 140
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "&VT Windows",IDC_STATIC,15,17,111,107
+    CONTROL         "Size to &Content",IDC_AUTOSIZE_WINDOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,49,64,10
+    CONTROL         "Size &Dynamically",IDC_DYNAMIC_SIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,63,69,10
+    LTEXT           "&Rule Tab Size:",IDC_STATIC,27,84,48,8
+    EDITTEXT        IDC_RULE_TAB_SIZE,81,84,34,12,ES_AUTOHSCROLL
+    LTEXT           "&Fixed Font Size:",IDC_STATIC,25,102,51,8
+    COMBOBOX        IDC_FONT_SIZE,81,100,35,63,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Default Size",IDC_STATIC,138,17,74,59
+    RTEXT           "&Width:",IDC_STATIC,150,41,22,8
+    EDITTEXT        IDC_MAX_WINDOW_WIDTH,176,41,26,12,ES_AUTOHSCROLL
+    RTEXT           "&Height:",IDC_STATIC,148,57,24,8
+    EDITTEXT        IDC_MAX_WINDOW_HEIGHT,176,57,26,12,ES_AUTOHSCROLL
+    CONTROL         "Tabbed Window Control",IDC_TABBED_WINDOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,34,93,10
+    GROUPBOX        "Toolbars",IDC_STATIC,137,81,76,41
+    CONTROL         "Toolbar Labels",IDC_TOOLBAR_LABELS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,93,63,10
+END
+
+IDD_PREF_EMAIL_PAGE DIALOG 0, 0, 228, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Email"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "SMTP &Server:",IDC_STATIC,31,43,46,8
+    EDITTEXT        IDC_SMTP_SERVER,81,40,98,14,ES_AUTOHSCROLL
+    RTEXT           "&From Email:",IDC_STATIC,38,62,37,8
+    EDITTEXT        IDC_FROM_EMAIL,81,59,98,14,ES_AUTOHSCROLL
+END
+
+IDD_PREF_GENERAL_PAGE DIALOGEX 0, 0, 228, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "&Initialization",IDC_STATIC,7,7,214,85
+    CONTROL         "&Auto Load Last Analyzer",IDC_AUTOLOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,15,89,12
+    CTEXT           "",IDC_LAST_ANALYZER_TEXT,19,26,197,25
+    CONTROL         "&Full Screen",IDC_FULL_SCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,51,53,10
+    CONTROL         "Auto &Save KB when Closing Analyzer",IDC_AUTOSAVE_KB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,76,133,10
+    CONTROL         "&KB Safe Edit Mode",IDC_KB_SAFE_EDIT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,64,76,10
+    RTEXT           "Auto &Comment Name:",IDC_STATIC,15,100,70,8
+    EDITTEXT        IDC_AUTHOR_NAME,91,99,85,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_APPS_DIRECTORY,68,115,131,14,ES_AUTOHSCROLL
+    LTEXT           "Apps Directory:",IDC_STATIC,16,118,49,8
+    PUSHBUTTON      "...",IDC_BROWSE,206,115,15,14
+    CONTROL         "Tip of the Day",ID_HELP_TIPOFTHEDAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,51,61,10
+END
+
+IDD_PREF_ARCHIVE DIALOG 0, 0, 229, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Archiving"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Author Name:",IDC_STATIC,23,24,50,10
+    EDITTEXT        IDC_ARCHIVE_NAME,76,22,128,12,ES_AUTOHSCROLL
+    LTEXT           "&FTP Location:",IDC_STATIC,23,41,46,8
+    EDITTEXT        IDC_ARCHIVE_FTP,76,38,128,12,ES_AUTOHSCROLL
+    LTEXT           "&Directory Path:",IDC_STATIC,23,56,48,8
+    EDITTEXT        IDC_DIRECTORY_PATH,76,54,128,12,ES_AUTOHSCROLL
+    LTEXT           "&Username:",IDC_STATIC,23,71,35,8
+    EDITTEXT        IDC_USERNAME,76,70,128,12,ES_AUTOHSCROLL
+    LTEXT           "&Password:",IDC_STATIC,23,86,34,8
+    EDITTEXT        IDC_PASSWORD,76,86,128,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_CUSTOM_MSG_DLG DIALOG 0, 0, 249, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_MESSAGE,35,7,207,49
+    CONTROL         334,IDC_STATIC,"Static",SS_BITMAP,7,7,21,20
+END
+
+IDD_REGISTRATION_DLG DIALOG 0, 0, 242, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Visual Text Registration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,151,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,151,50,14
+    CTEXT           "Message",IDC_MESSAGE,13,110,214,34
+    EDITTEXT        IDC_USERNAME,84,70,151,14,ES_AUTOHSCROLL
+    RTEXT           "Username:",IDC_STATIC,7,73,72,8
+    EDITTEXT        IDC_REGISTRATION_NUMBER,84,87,151,14,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "Registration Number:",IDC_STATIC,7,90,72,8
+    LTEXT           "Copyright",IDC_COPYRIGHT,85,7,150,57,SS_SUNKEN
+    CONTROL         345,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,7,7,75,46
+    CTEXT           "Trial Copy",IDC_STATIC,7,54,75,10,SS_SUNKEN
+END
+
+IDD_REPLACE_IN_FILES DIALOG 36, 44, 230, 151
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace in Files"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Fi&nd:",IDC_STATIC,4,9,48,8,NOT WS_GROUP
+    EDITTEXT        IDE_FIND,54,6,114,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Re&place With:",IDC_STATIC,4,26,48,8,NOT WS_GROUP
+    EDITTEXT        IDE_REPLACE,54,24,114,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &Whole Word Only",IDC_MATCH_WHOLE_WORD,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,28,43,104,12
+    CONTROL         "Match &Case",IDC_MATCH_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,141,43,59,12
+    CONTROL         "All Pa&ss Files",IDC_RULE_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,71,57,10
+    CONTROL         "Replace in Pass Su&bfolders",IDC_RULES_RECURSIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,71,103,10
+    CONTROL         "All &Text Files",IDC_TEXT_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,84,55,10
+    CONTROL         "Replace in Text Su&bfolders",IDC_TEXT_RECURSIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,84,101,10
+    LTEXT           "&Directory:",IDC_STATIC,4,113,31,8
+    EDITTEXT        IDE_DIRECTORY,41,110,164,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,210,110,14,14
+    LTEXT           "&File Spec:",IDC_STATIC,4,130,32,8
+    COMBOBOX        IDC_FILESPEC,41,129,69,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Replace in Su&bfolders",IDC_DIRECTORY_RECURSIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,132,85,10
+    DEFPUSHBUTTON   "&Replace",IDOK,174,5,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,174,23,50,14,WS_GROUP
+    GROUPBOX        "Scope",IDC_STATIC,18,60,193,40
+END
+
+IDD_SEMPOPUP DIALOG 0, 0, 186, 94
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,0,0,50,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    EDITTEXT        IDE_TEXT,0,-1,179,88,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PREF_LOOKUP DIALOG 0, 0, 230, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dictionary Lookup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List2",IDC_LOOKUP_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,216,96
+    LTEXT           "&Name:",IDC_STATIC,7,108,22,8
+    EDITTEXT        IDE_NAME,32,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "&URL:",IDC_STATIC,7,125,18,8
+    EDITTEXT        IDE_URL,32,122,191,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Add",IDC_ADD,75,105,31,14
+    PUSHBUTTON      "U&pdate",IDC_UPDATE,108,105,37,14
+    CONTROL         "LKUP_UP",IDB_UP,"Button",BS_OWNERDRAW | BS_BITMAP | WS_GROUP | WS_TABSTOP,147,105,16,14
+    CONTROL         "LKUP_DOWN",IDB_DOWN,"Button",BS_OWNERDRAW | BS_BITMAP | WS_GROUP | WS_TABSTOP,165,105,16,14
+    PUSHBUTTON      "&Delete",IDC_DELETE,183,105,37,14
+END
+
+IDD_PREF_ANALYZER_DEPENDENT_PAGE DIALOGEX 0, 0, 228, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analyzer Dependent"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "",IDC_ANALYZER,58,19,140,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         "&Load Compiled KB",IDC_LOAD_COMPILED_KB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,45,74,10
+    LTEXT           "Analyzer:",IDC_STATIC,19,22,30,8
+END
+
+IDD_HEXEDIT_DIALOG DIALOGEX 0, 0, 326, 233
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HexEdit"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_HEXEDIT,7,7,213,102,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "Enabled Colors",IDC_TXT_ENABLED,7,117,53,8
+    CONTROL         "",IDC_GBOX_ENABLED,"Static",SS_ETCHEDHORZ,60,121,160,1
+    LTEXT           "Back",IDC_TXT_BACK_ENABLED,23,135,18,8
+    PUSHBUTTON      "",IDC_CLR_BACK_ENABLED,48,132,50,14
+    LTEXT           "Hilighted Back",IDC_TXT_BACK_HILITE_ENABLED,104,135,47,8
+    PUSHBUTTON      "",IDC_CLR_BACK_HILITE_ENABLED,156,132,50,14
+    LTEXT           "Text",IDC_TXT_TEXT_ENABLED,23,151,15,8
+    PUSHBUTTON      "",IDC_CLR_TEXT_ENABLED,48,148,50,14
+    LTEXT           "Hilighted Text",IDC_TXT_TEXT_HILITE_ENABLED,104,151,44,8
+    PUSHBUTTON      "",IDC_CLR_TEXT_HILITE_ENABLED,156,148,50,14
+    LTEXT           "Disabled Colors",IDC_TXT_DISABLED,7,171,53,8
+    CONTROL         "",IDC_GBOX_DISABLED,"Static",SS_ETCHEDHORZ,60,175,160,1
+    LTEXT           "Back",IDC_TXT_BACK_DISABLED,23,191,18,8
+    PUSHBUTTON      "",IDC_CLR_BACK_DISABLED,48,188,50,14
+    LTEXT           "Hilighted Back",IDC_TXT_BACK_HILITE_DISABLED,104,191,47,8
+    PUSHBUTTON      "",IDC_CLR_BACK_HILITE_DISABLED,156,188,50,14
+    LTEXT           "Text",IDC_TXT_TEXT_DISABLED,23,207,15,8
+    PUSHBUTTON      "",IDC_CLR_TEXT_DISABLED,48,204,50,14
+    LTEXT           "Hilighted Text",IDC_TXT_TEXT_HILITE_DISABLED,104,207,44,8
+    PUSHBUTTON      "",IDC_CLR_TEXT_HILITE_DISABLED,156,204,50,14
+    LTEXT           "Base Address:",IDC_TXT_BASEADDR,235,44,46,8
+    EDITTEXT        IDC_EDIT_BASEADDR,235,53,84,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Address",IDC_CHK_ADDRESS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,235,77,41,10
+    CONTROL         "Hexcode",IDC_CHK_HEXCODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,90,45,10
+    CONTROL         "Ascii",IDC_CHK_ASCII,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,103,31,10
+    CONTROL         "4/8",IDC_CHK_WIDE_ADDRESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,116,27,10
+    LTEXT           "Bytes/Line",IDC_TXT_BYTE,235,132,35,8
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_GROUP | WS_TABSTOP,235,143,84,21
+    CONTROL         "Enable",IDC_CHK_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,185,38,10
+    CONTROL         "Show Caret",IDC_CHK_CARET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,199,53,10
+    CONTROL         "Allow Deletes",IDC_CHK_ALLOWDEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,213,59,10
+    DEFPUSHBUTTON   "OK",IDOK,235,7,84,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,24,84,14
+    CONTROL         "Read Only",IDC_CHK_READONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,171,49,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_REPLACE_IN_FILES DLGINIT
+BEGIN
+    1340, 0x403, 4, 0
+0x2e2a, 0x002a, 
+    1340, 0x403, 6, 0
+0x2e2a, 0x6170, 0x0074, 
+    1340, 0x403, 6, 0
+0x2e2a, 0x7874, 0x0074, 
+    1340, 0x403, 7, 0
+0x2e2a, 0x7468, 0x6c6d, "\000" 
+    0
+END
+
+IDD_PREF_DISPLAY_PAGE DLGINIT
+BEGIN
+    IDC_FONT_SIZE, 0x403, 2, 0
+0x0038, 
+    IDC_FONT_SIZE, 0x403, 2, 0
+0x0039, 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_FONT_SIZE, 0x403, 3, 0
+0x3432, "\000" 
+    0
+END
+
+IDD_PASS_PROPERTIES_DLG DLGINIT
+BEGIN
+    1027, 0x403, 8, 0
+0x6150, 0x7474, 0x7265, 0x006e, 
+    1027, 0x403, 10, 0
+0x6552, 0x7563, 0x7372, 0x7669, 0x0065, 
+    0
+END
+
+IDD_OUTPUT_ITEM_DLG DLGINIT
+BEGIN
+    1027, 0x403, 8, 0
+0x756e, 0x656d, 0x6972, 0x0063, 
+    1027, 0x403, 6, 0
+0x6c61, 0x6870, 0x0061, 
+    1027, 0x403, 5, 0
+0x6164, 0x6574, "\000" 
+    1027, 0x403, 11, 0
+0x6164, 0x6574, 0x7220, 0x6e61, 0x6567, "\000" 
+    0
+END
+
+IDD_DICTIONARY_DLG DLGINIT
+BEGIN
+    1283, 0x403, 7, 0
+0x614e, 0x7272, 0x776f, "\000" 
+    1283, 0x403, 5, 0
+0x6946, 0x646e, "\000" 
+    1283, 0x403, 9, 0
+0x6946, 0x646e, 0x4f20, 0x6666, "\000" 
+    1270, 0x403, 4, 0
+0x6c41, 0x006c, 
+    1270, 0x403, 5, 0
+0x6957, 0x6874, "\000" 
+    1270, 0x403, 8, 0
+0x6957, 0x6874, 0x756f, 0x0074, 
+    0
+END
+
+IDD_ATTRIBUTE_EDITOR DLGINIT
+BEGIN
+    IDC_VALUE_TYPE, 0x403, 7, 0
+0x7473, 0x6972, 0x676e, "\000" 
+    IDC_VALUE_TYPE, 0x403, 8, 0
+0x6f63, 0x636e, 0x7065, 0x0074, 
+    IDC_VALUE_TYPE, 0x403, 8, 0
+0x756e, 0x656d, 0x6972, 0x0063, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_SPLASH_DLG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SPLASH_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "VisualText"
+    IDS_FIND                "Find"
+    ID_HELP_TIPOFTHEDAY     "Tip of the Day\nTips"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "VisualText"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_SAVEALL         "Saves all open files\nSave All"
+    ID_EDIT_FINDINFILES     "Searches for a string in multiple files\nFind in Files"
+    ID_COMBO_FIND           "Activates the Find tool\nFind"
+    ID_HELP_SEARCH          "Searches the online documentation\nSearch"
+    ID_BUILD_COMPILE        "Compiles the file\nCompile"
+    ID_BUILD_STOP           "Stops the build\nStop Build"
+    ID_BUILD_EXECUTE        "Executes the program\nExecute Program"
+    ID_BUILD_GO             "Starts or continues the program\nGo"
+    ID_EDIT_BREAKPOINT      "Inserts or removes a breakpoint\nInsert/Remove Breakpoint"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_WINDOWLIST    "Manages the currently open windows\nWindow List"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_OUTPUT          "Shows or hides the Output window\nOutput"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_WORKSPACE       "Shows or hides the Workspace window\nWorkspace"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUILD_BUILD          "Builds the project\nBuild"
+    ID_WIZBAR_CLASS         "Classes in current project\nWizardBar C++ Class"
+    ID_WIZBAR_FILTER        "Filters for class selectedin WizardBar\nWizardBar C++ Filter"
+    ID_WIZBAR_MEMBERS       "Members of class selected in WizardBar\nWizardBar C++ Members"
+    ID_WIZBAR_ACTIONS       "WizardBar default and action menu\nWizardBar Actions (Default: Go To Function  Declaration)"
+    ID_WIZBAR_GOTOFUNCTIONDECLARATION 
+                            "Goes to the selected function declaration (WizardBar)"
+    ID_WIZBAR_GOTOFUNCTIONDEFINITION 
+                            "Goes to the selected function definition/implementation (WizardBar)"
+    ID_WIZBAR_ADDWINDOWSMESSAGEHANDLER 
+                            "Add Add Windows Message Handler (WizardBar)"
+    ID_WIZBAR_ADDVIRTUALFUNCTION "Add Virtual Function (WizardBar)"
+    ID_WIZBAR_DELETE        "Delete member (WizardBar)"
+    ID_WIZBAR_GOTOCLASSDEFINITION 
+                            "Goes to selected class definition (WizardBar)"
+    ID_WIZBAR_NEWCLASS      "Creates a new class and adds it to the project"
+    ID_WIZBAR_NEWFORM       "Creates a new form and adds it to the project"
+    ID_WIZBAR_WIZARDBARHELP "Brings up help for the WizardBar"
+    ID_WIZBAR_ADDMEMBERFUNCTION "Add Member Function (WizardBar)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUILD_SELECT         "Selects the active project\nSelect Active Project"
+    ID_BUILD_ACTIVE         "Selects the active configuration\nSelect Active configuration"
+    ID_INDICATOR_ROWCOL     "ROWCOL"
+    ID_INSERT_ATL           "Adds a new ATL Object to the project\nNew ATL Object"
+    ID_RESNEW_DIALOG        "Creates a new dialog box resource\nNew Dialog"
+    ID_RESOURCE_MENU        "Creates a new menu resource\nNew menu"
+    ID_RESOURCE_CURSOR      "Creates a new cursor resource\nNew Cursor"
+    ID_RESOURCE_ICON        "Creates a new icon resource\nNew Icon"
+    ID_RESOURCE_BITMAP      "Creates a new bitmap resource\nNew Bitmap"
+    ID_RESOURCE_ACCEL       "Creates a new accelerator table resource\nNew Accelerator"
+    ID_RESOURCE_STRING      "Creates a new string table resource\nNew String Table"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RESOURCE_VERSION     "Creates or opens a version information resource\nNew Version"
+    ID_RESOURCE_SYMBOLS     "Browses and edits the symbols in the resource file\nResource Symbols"
+    ID_RESOURCE_DIALOG      "Creates a new dialog box resource\nNew Dialog"
+    ID_EDIT_TOGGLE          "Toggles a bookmark for the current line on and off\nToggle Bookmark"
+    ID_EDIT_MOVE            "Next Bookmark"
+    ID_EDIT_PREV            "MOves to the line containing the previous bookmark\nPrevious Bookmark"
+    ID_EDIT_INCREASE        "Indents the selected text right one tab stop\nIncrease Indent"
+    ID_EDIT_DECREASE        "Indents the selected text left one tab stop\nDecrease Indent"
+    ID_EDIT_WHITESP         "Shows or hides tab characters\nToggle Whitespace Display"
+    ID_EDIT_NEXT            "Moves to the line containing thenext bookmark\nNext Bookmark"
+    ID_EDIT_CLEARBM         "Clears all bookmarks in the window\nClear All Bookmarks"
+    ID_DEBUG_RESTART        "Restarts the program\nRestart"
+    ID_DEBUG_STOP           "Stops debugging the program\nStop Debugging"
+    ID_DEBUG_BREAK          "Sops program execution; breaks into the debugger\nBreak Execution"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DEBUG_APPLY          "Applies code changes made to C/C++ source files while debugging\nApply Code Changes"
+    ID_DEBUG_SHOWNEXT       "Displays the source line for the instruction pointer\nShow Next Statement"
+    ID_DEBUG_STEPINTO       "Steps into the next statement\nStep Into"
+    ID_DEBUG_STEPOVER       "Steps over the next statement\nStep Over"
+    ID_DEBUG_STEPOUT        "Steps our of the current function\nStep Out"
+    ID_DEBUG_RUNTO          "Runs the program to the line containing the cursor\nRun to Cursor"
+    ID_DEBUG_QUICKWATCH     "Performs immediate evaluation of variables and expressions\nQuickWatch"
+    ID_DEBUG_WATCH          "Shows or hides the Watch window\nWatch"
+    ID_DEBUG_VARIABLES      "Shows or hides the Variables window\nVariables"
+    ID_DEBUG_REGISTERS      "Shows or hides the Registers window\nRegisters"
+    ID_DEBUG_MEMORY         "Shows or hides the Memory window\nMemory"
+    ID_DEBUG_CALLSTACK      "Shows or hides the Call Stack window\nCall Stack"
+    ID_DEBUG_DISASSEMBLY    "Shows or hides the Disassembly window\nDisassembly"
+    ID_BROWSE_DEF           "Displays a symbol definition\nGo To Definition"
+    ID_BROWSE_REF           "Displays a symbol reference\nGo To Reference"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BROWSE_PREV          "Displays the previous symbol definition or feference\nPrevious Definition/Reference"
+    ID_BROWSE_NEXT          "Displays the next symbol definition or feference\nNext Definition/Reference"
+    ID_BROWSE_POP           "Returns the location preceding the last browse operation\nPop Context"
+    ID_BROWSE_OUTLINE       "Shows the outline ofthe selected or current file\nFile Outline"
+    ID_BROWSE_DEFANDREF     "Shows symbol definitions and references\nDefinitions and References"
+    ID_BROWSE_DERIVED       "Shows the derived class graph of the selected class\nDerived Classes and Members"
+    ID_BROWSE_BASE          "Shows the base class graph of the selected class\nBase Classes and Members"
+    ID_BROWSE_CALLGRAPH     "Shows the call graph of the selected function\nCall Graph"
+    ID_BROWSE_CALLERSGRAPH  "Shows the callers graph of the selected function\nCallers Graph"
+    ID_DBASE_RUN            "Runs the selected object\nRun"
+    ID_DBASE_ADD            "Adds a Data Connection to the active project\nAdd Data Connection"
+    ID_DBASE_INSERT         "Inserts a new item into the database\nInsert New Database Item"
+    ID_FILE_OPENWORKSPACE   "Opens an existing workspace"
+    ID_FILE_SAVEWORKSPACE   "Saves the workspace"
+    ID_FILE_CLOSEWORKSPACE  "Closes the workspace"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_GOTO            "Moves to a specified location"
+    ID_EDIT_BREAKPOINTS     "Edits breakpoints in the program"
+    ID_VIEW_CLASSWIZARD     "Edits the application classes and ties resources to code"
+    ID_VIEW_RESOURCEINCLUDES 
+                            "Edits the resource symbol file name and preprocessor directives"
+    ID_VIEW_REFRESH         "Refreshes the selection"
+    ID_VIEW_PROPERTIES      "Edits the current selections properties"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_BAR_OUTPUT          "Shows or hides the Output window\nOutput"
+    IDC_BAR_WORKSPACE       "Shows or hides the Workspace window\nWorkspace"
+    IDC_BAR_WATCH           "Shows or hides the Watch window\nWatch"
+    IDC_BAR_CALLSTACK       "Shows or hides the Call Stack window\nCall Stack"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_BAR_MEMORY          "Shows or hides the Memory window\nMemory"
+    IDC_BAR_VARIABLES       "Shows or hides the Variables window\nVariables"
+    IDC_BAR_REGISTERS       "Shows or hides the Registers window\nRegisters"
+    IDC_BAR_DISASSEMBLY     "Shows or hides the Disassembly window\nDisassembly"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_DOCKINGVIEW   "Toggles the docking feature for the window on and off"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RULEFILE_FINDINLOG   "Find the selected or typed-in word in the log file corresponding to the currently selected pass"
+    ID_VIEW1                "Show or hide Workspace\nToggle Workspace"
+    ID_VIEW_BAR1            "Display or hide the Tab Window\nToggle Tab Window"
+    ID_VIEW_BAR2            "Display or hide Log Window\nToggle Log Window"
+    ID_VIEW_BAR3            "Display or hide Find Window\nToggle Find Window"
+    ID_GENERATELOGS         "Toggle for generating log files when running\nToggle Generate Logs"
+    ID_RUN                  "Run the analyzer\nRun"
+    ID_URL                  "Enter a URL to browse\nURL"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEW_BROWSER          "Open a new browser window for the current URL\nNew Browser"
+    ID_KNOWLEDGE_BASE       "Open the Knowledge Base Editor\nKB Editor"
+    ID_BUTTON33023          "Move a concept down in the KB Editor\nConcept Down"
+    ID_UP                   "Move a concept up in the KB Editor\nConcept Up"
+    ID_KB_DOWN              "Move a KB concept down\nMove Concept Down"
+    ID_TAB_SAVE             "Save the state of the current Tab Window\nSave in Tab Window"
+    ID_SLOT_FILL            "Bring up the Data Review Window\nData Review"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUTTON33242          "Compile the current KB\nCompile the KB"
+    ID_COMPILE_KB           "Compile the current Knowledge Base\nCompile KB"
+    ID_KB_COMPILEKB         "Compile the current Knowledge Base"
+    ID_ANALYZER_COMPILEANALYZER 
+                            "Compile an analyzer the next time it is loaded."
+    ID_BUTTON33250          "Save analyzer sequence file\nSave Analyzer File"
+    ID_REPLACE_IN_FILES     "Replace Text in Selected Files\nReplace Text in Files"
+    ID_TREE_SEMANTICS       "Toggle displaying semantic node information\nToggle Semantic Display"
+    ID_ATTRIBUTEEDITOR      "Open the Attribute Editor\nAttribute Editor"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_HEXVIEWER      "Display a text file in hexadecimal"
+    ID_TOOLS_ASCIITABLE     "Display the ASCII Table for reference"
+    ID_TOOLS_TEXTFILEINFO   "Display specific information about a text file"
+    ID_TOOLS_CHARACTERVIEWER 
+                            "Display the individual characters of a text file"
+    ID_DIRTREEMENU_TOOLS_CHARACTERVIEWER 
+                            "Display the individual characters of a text file"
+    ID_TOOLS_EMAIL          "Invoke a tool for emailing directly from VisualText"
+    ID_DIRTREEMENU_TOOLS_EMAIL 
+                            "Invoke a tool for emailing directly from VisualText"
+    ID_SET_PAGES            "Set the pages for Page Mode to current layout\nSet Page Layout"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_RULEFILE            "\nRuleEditor\nRule\n\n\nRule.Editor\nEdit Rules"
+    IDS_FTPMSG2             "Unable to create socket"
+    IDS_FTPMSG3             "Unable to connect to server"
+    IDS_FTPMSG4             "Unable to open file on local machine"
+    IDS_FTPMSG5             "File error"
+    IDS_FTPMSG6             "Network error"
+    IDS_SOCKETS_INIT_FAILED "Sockets intialization failed"
+    IDS_FTPMSG1             "Login Failed"
+END
+
+STRINGTABLE
+BEGIN
+    ID_URL_COMBOBOX         "Enter a URL or file to browse\nBrowser"
+    ID_ADD_URL              "Save URL as an HTML file in Text Tab\nSave URL Text"
+    ID_LOGFILE_VIEWRULEFILE "View the pass file associated with this log file."
+    ID_TEXTVIEW_SELECTANDRUN "Run the analyzer on the current text"
+    ID_RULEFILE_CLOSEREST   "Close all the windows in the workspace except for the active one"
+    ID_GEN_ANALYZER         "Generate rules for samples added to Gram Tab\nGenerate Dirty"
+    ID_TREE_UP              "Move selection up in the current Tab Window\nMove Tab Selection Up"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TREE_DOWN            "Move selection down in the current Tab Window\nMove Tab Selection Down"
+    ID_SAVE_KB              "Save the Knowledge Base\nSave KB"
+    ID_GEN_DIRTY_AND_RUN    "Generate dirty and run analyzer on current text\nSlog"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SEQUENCEMENU_HIGHLIGHTMATCHES 
+                            "Highlight only the matches for the current pass"
+    ID_RUN_NEXT             "Run the analyzer on the next text\nRun Next"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TEXT_DISPLAYTREE     "Display the portion of the parse tree of the selected text"
+    ID_GRAMMAR_VIEWTREE     "Display the parse tree for concept"
+    ID_HIGHLIGHTING         "Toggle highlighting non-terminal nodes in current input text\nToggle Highlight Mode"
+    ID_TEXT_VIEWOUTPUT      "Display the output file associated with the current text"
+    ID_TEXT_VIEWENTIRETREE  "Display the Parse Tree associated with the current text"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DELETE               "Delete the selected object in the Tab Window\nDelete in Tab Window"
+    ID_FIND                 "Find text patterns in pass, log, and text files\nFind in Files"
+    ID_STOP_PROCESS         "Stop the analyzer during processing\nStop Analyzer"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VERBOSE_MODE         "Toggle the Verbose Mode to display analyzer run details\nToggle Verbose Mode"
+    ID_NEXT_TEXT            "Move to the next input text\nNext Text"
+    ID_PREV_TEXT            "Move to the previous input text\nPrevious Text"
+    ID_PAGE_MODE            "Toggle Page Mode for stepping among input texts\nToggle Page Mode"
+    ID_TREE                 "Display the entire parse tree for the current pass\nView Parse Tree"
+    ID_PROCESSED_TEXT       "Display the current input text\nView Current Text"
+    ID_RULE_FILE            "Display the pass file for the current pass\nView Pass File"
+    ID_DUMP                 "Display all the output files for the current input text\nView Dump Files"
+    ID_OUTPUT               "Display the default output text file\nView Output File"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_BROWSER_MENU        "\nBrowser\nBrowser\n\n\nInternet.Browser\nBrowser"
+    IDR_KNOWLEDGE_MENU      "\nKnowledge\nKnowledge\n\n\nKnowledge.Document\nKnowledge Document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RUN_HTML             "Run the analyzer on the live web page\nRun Live"
+    ID_WEBPAGE              "Display the webpage associated with the selected HTML text file\nView Web Page"
+    ID_TREE_CONCEPT         "Display a parse tree of concepts matched in the current pass\nView Concept Tree"
+    ID_SPIDER               "Spider starting at the current browser URL and place files in the current Text Tab folder\nSpider"
+    ID_TEXT_SORTTEXT        "Sort the selected text or entire text and keep only the unique values"
+    ID_KB_UP                "Move a KB concept up\nMove Concept Up"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_KBTOOLBAR      "Hide or display the Workspace Toolbar\nToggle Workspace Toolbar"
+    ID_TOOLS_BROWSERTOOLBAR "Hide or display the Browser Toolbar\nToggle Browser Toolbar"
+    ID_TOOLS_TABTOOLBAR     "Hide or display the Tab Toolbar\nToggle Tab Toolbar"
+    ID_TOOLS_FIND           "Find text in VisualText files"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_PARSETREE           "\nParseTree\nParse\n\n\nParse.Document\nParse Document"
+    IDR_TEXT_EDITOR         "\nTextEditor\nTextEditor\n\n\nText.Editor\nVisual Text Editor"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WORDNET              "Spider Wordnet for mining a dictionary\nWordnet"
+    ID_DIRTREEMENU_DICTIONIZE 
+                            "Sort the words of a text into alphabetic folders corresponding to the dictionary indexes of the KB"
+    ID_DIRTREEMENU_TOOLS_WORDNET 
+                            "Invoke a WordNet call for each word in a text"
+    ID_KNOWLEDGE_UP         "Move the selected concept up\nConcept Up"
+    ID_DIRTREEMENU_TEXTFILEINFO 
+                            "Display specific information about the current text file"
+END
+
+STRINGTABLE
+BEGIN
+    ID_COMPILE              "Toggle to compile the analyzer while loading it\nCompile Analyzer"
+    ID_KNOWLEDGE_DOWN       "Move the selected concept down\nConcept Down"
+    ID_TOOLS_DEBUGTOOLBAR   "Hide or display the Debug Toolbar\nToggle Debug Toolbar"
+    ID_DICTIONARY           "Open the Dictionary Tool\nDictionary"
+END
+
+STRINGTABLE
+BEGIN
+    ID_KB_DICTIONARY        "Open the Dictionary Tool\nDictionary Tool"
+    ID_DIRTREEMENU_TOOLS_HEXVIEWER "Display a text file in hexadecimal"
+    ID_DIRTREEMENU_TOOLS_ASCIITABLE "Display the ASCII Table for reference"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BATCH_MODE           "Toggle Batch Mode for efficiently processing folders of input files\nToggle Batch Mode"
+    ID_TEXT_WRAPTEXT        "Wrap the selected or current text to the user specified number of characters per line"
+    ID_TEXT_GENERATERULE    "Generate a rule from the selected text in the current pass in the Analyzer Tab"
+    ID_DISPLAY_TOOLBARS_FILE 
+                            "Hide or display the Main Toolbar\nToggle Main Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DISPLAY_TABSWINDOW   "Display or hide the Tab Window"
+    ID_DISPLAY_OUTPUTWINDOW "Display or hide the Log Window"
+    ID_DISPLAY_FINDWINDOW   "Display or hide the Find Window"
+    ID_LOGFILE_RULEFILE_FINDLOCAL "Find selected text in the local file"
+    ID_SAVE_AS              "Save the current document as another file"
+    ID_TEXT_FINDAGAIN       "Find the next match in the current text"
+    ID_TEXT_FINDLOCAL       "Find the selected text in the current file"
+END
+
+STRINGTABLE
+BEGIN
+    ID_URL_STOP             "Stop"
+    ID_RULEFILE_FIND        "Find the text in pass, log, and text files."
+END
+
+STRINGTABLE
+BEGIN
+    ID_RULEFILE_FINDAGAIN   "Find the text again in the file"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ATTRIBUTE_EDITOR     "Open the Attribute Editor\nAttribute Editor"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PAGE_SETUP           "Change page layout settings\nPage Setup"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_VISUALTYPE          "\nVisualText\nVisualText\n\n\nVisualText.Document\nVisualText Document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GO                   "Go to the URL in the combo box\nGo"
+    ID_GO_URL               "Go to URL"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_PANE_OUTPUT         "Output"
+    IDR_PANE_WORKSPACE      "Workspace"
+    IDR_PANE_ANALYZER       "Analyzer"
+    IDR_PANE_GRAMMAR        "Grammar"
+    IDR_PANE_TEXT           "Text"
+    IDR_PANE_FIND           "Find"
+    IDR_PANE_FIND2          "Find 2"
+    IDR_PANE_ANALYZE        "Analyze"
+    IDR_PANE_LOG            "Log"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUT               "About"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RECENT_COMBO         "Recent files"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_SYNTAXEDIT_MENU     "\nSyntaxEditor\nSyntax\n\n\nSyntax.Editor\nEdit Rules"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CLEAR_URL            "Clear URLs"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BACK_URL             "Backward in Browser"
+    ID_FORWARD_URL          "Forward in Browser"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VisualText.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

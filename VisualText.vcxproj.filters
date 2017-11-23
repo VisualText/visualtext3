@@ -510,18 +510,6 @@
     <ClInclude Include="XZip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="_cpp1_schclass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="_cpp2_schclass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ColorsDataEntry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ColorsDataEntry1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\atl.bmp">
@@ -940,8 +928,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram11.cd" />
-    <None Include="res\GUI_VisualStudio6.rc2" />
     <None Include="Config\Schemas\_NLPpp.schclass">
       <Filter>Config\Schemas</Filter>
     </None>

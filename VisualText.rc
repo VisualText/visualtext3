@@ -497,8 +497,6 @@ BEGIN
         MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
         MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW
         MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
-        MENUITEM SEPARATOR
-        MENUITEM "Options",                     ID_VIEW_OPTIONS
     END
     POPUP "&Browser"
     BEGIN
@@ -667,8 +665,6 @@ BEGIN
         MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
         MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW, GRAYED
         MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
-        MENUITEM SEPARATOR
-        MENUITEM "Options",                     ID_VIEW_OPTIONS
     END
     POPUP "&Browser"
     BEGIN
@@ -1959,8 +1955,6 @@ BEGIN
         MENUITEM "&Find Window",                ID_DISPLAY_FINDWINDOW
         MENUITEM "&Log Window",                 ID_DISPLAY_OUTPUTWINDOW, GRAYED
         MENUITEM "Ta&b Window",                 ID_DISPLAY_TABSWINDOW
-        MENUITEM SEPARATOR
-        MENUITEM "Options",                     ID_VIEW_OPTIONS
     END
     POPUP "&Browser"
     BEGIN

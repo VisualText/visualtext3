@@ -151,9 +151,7 @@ CSyntaxEditorView::CSyntaxEditorView() : m_dwLastUpdate(0), m_dwParserStart(0)
 	// _tsetlocale(LC_ALL, _T(""));
 
 	if (bFileMode)
-		GetEditCtrl().SetConfigFile(CXTPSyntaxEditCtrl::GetModulePath() + _T("Config\\SyntaxEdit.ini"));
-	//Test for remote config
-	//GetEditCtrl().SetConfigFile(_T("\\\\Midc\\software\\TempFolderForTesting\\SyntaxEdit.ini"));
+		GetEditCtrl().SetConfigFile(_T("Config\\SyntaxEdit.ini"));
 
 	if (!bFileMode)
 	{

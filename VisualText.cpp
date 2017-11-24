@@ -1036,7 +1036,10 @@ CDocument *CVisualTextApp::OpenNewDocument(const CString &strTarget, CString fil
 				doc = (CVisualTextDoc *)pTemplate->CmyMultiDocTemplate::OpenDocumentFile(NULL,showFlag);
 			}
 			else  {
-				doc = (CVisualTextDoc *)pTemplate->CmyMultiDocTemplate::OpenDocumentFile((LPCTSTR)filePath,showFlag, IDI_TEXT);
+				int iconID = IDI_TEXT;
+				if (EndsWith(filePath, ".pat"))
+					iconID = IDI_PAT;
+				doc = (CVisualTextDoc *)pTemplate->CmyMultiDocTemplate::OpenDocumentFile((LPCTSTR)filePath,showFlag, iconID);
 				if (doc) {
 					//We can't actually safely open a file when we haven't got
 					//an analyzer open. PD 02/26/2001

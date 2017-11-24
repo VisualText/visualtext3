@@ -1257,6 +1257,7 @@ copy debug_qdbm\VisualTextQD.pdb $(TAI)\bin\VisualTextQD.pdb
   </ItemGroup>
   <ItemGroup>
     <None Include="Config\Schemas\_NLPpp.schclass" />
+    <None Include="Config\SyntaxEdit.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

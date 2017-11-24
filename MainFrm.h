@@ -57,14 +57,8 @@ enum WORKSPACE_TAB {
 
 class CVisualTextDoc;
 
-#ifndef _XTP_INCLUDE_COMMANDBARS
-#define CMainFrameBase CMDIFrameWnd
-#define CXTPMDIFrameWnd CMDIFrameWnd
-#else
-#define CMainFrameBase CXTPMDIFrameWnd, CXTPOffice2007FrameHook
-#endif
 
-class CMainFrame : public CMainFrameBase
+class CMainFrame : public CXTPMDIFrameWnd
 {
 	DECLARE_DYNAMIC(CMainFrame)
 public:

@@ -1256,9 +1256,8 @@ copy debug_qdbm\VisualTextQD.pdb $(TAI)\bin\VisualTextQD.pdb
     <Image Include="res\wizard.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram11.cd" />
     <None Include="Config\Schemas\_NLPpp.schclass" />
-    <None Include="res\GUI_VisualStudio6.rc2" />
+    <None Include="Config\SyntaxEdit.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

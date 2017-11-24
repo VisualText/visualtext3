@@ -347,7 +347,6 @@ static UINT uHideCmds[] =
 
 CMainFrame::CMainFrame()
 {
-	_tsetlocale(LC_ALL, _T(""));
 	InitVars();
 
     // Enable/Disable XP GUI Mode
@@ -495,7 +494,6 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	//////////////////////////////////
 
 	m_browserToolBar = (CXTPToolBar*)pCommandBars->Add(_T("Browser"), xtpBarTop);
-	m_browserToolBar->GetControls()->Add(xtpControlLabel, 0)->SetCaption(_T("Browser:"));
 	if (!m_browserToolBar ||
 		!m_browserToolBar->LoadToolBar(IDR_BROWSER_TOOLBAR))
 	{

@@ -37,6 +37,7 @@ protected: // create from serialization only
 
 	CString m_strText;
 	CFont m_font;
+	BOOL m_wordWrap;
 
 // Attributes
 public:
@@ -187,6 +188,7 @@ protected:
 	afx_msg void OnRulefileHighlightmatches();
 	afx_msg void OnTextviewSelectandrun();
 	afx_msg void OnTextDisplaytree();
+	afx_msg void OnWordWrapToggle();
 	afx_msg void OnTextViewoutput();
 	afx_msg void OnTextViewentiretree();
 	afx_msg void OnSamplemenuGeneratesamples();

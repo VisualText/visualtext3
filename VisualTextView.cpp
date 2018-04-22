@@ -80,6 +80,7 @@ BEGIN_MESSAGE_MAP(CVisualTextView, CRichEditView)
 	ON_COMMAND(ID_RULEFILE_HIGHLIGHTMATCHES, OnRulefileHighlightmatches)
 	ON_COMMAND(ID_TEXTVIEW_SELECTANDRUN, OnTextviewSelectandrun)
 	ON_COMMAND(ID_TEXT_DISPLAYTREE, OnTextDisplaytree)
+	ON_COMMAND(ID_TEXT_WORDWRAPON, OnWordWrapToggle)
 	ON_COMMAND(ID_TEXT_VIEWOUTPUT, OnTextViewoutput)
 	ON_COMMAND(ID_TEXT_VIEWENTIRETREE, OnTextViewentiretree)
 	ON_COMMAND(ID_SAMPLEMENU_GENERATESAMPLES, OnSamplemenuGeneratesamples)
@@ -321,6 +322,7 @@ void CVisualTextView::Initialize()
 
 	// OBSCURE CODE: TURNS OFF AUTOMATIC WRAPPING FOR RICH TEXT EDIT
 	edit.SetTargetDevice(NULL, 1);
+	m_wordWrap = false;
 
 	CVisualTextDoc *doc = GetDocument();
 	doc->Update();
@@ -1280,6 +1282,9 @@ void CVisualTextView::TextViewPopup(CPoint point)
 			menuLookup.Detach();
 		}
 	}
+
+	context->CheckMenuItem(ID_TEXT_WORDWRAPON, m_wordWrap ? MF_CHECKED : MF_UNCHECKED);
+
 	PopupContextMenu(this,context,point,disables);
 }
 
@@ -1521,12 +1526,30 @@ void CVisualTextView::OnTextviewSelectandrun()
 
 void CVisualTextView::OnTextDisplaytree() 
 {
-	long start,end;
+	long start, end;
 
-	if (GetSelTextTrim(start,end,false)) {
+	if (GetSelTextTrim(start, end, false)) {
 		SelectText();
 		CMainFrame *wnd = (CMainFrame *)AfxGetMainWnd();
-		wnd->OpenParseTree(start,end);	
+		wnd->OpenParseTree(start, end);
+	}
+}
+
+void CVisualTextView::OnWordWrapToggle()
+{
+	CRichEditCtrl &edit = GetRichEditCtrl();
+
+	CMenu menu;
+	menu.LoadMenu(IDR_TEXTVIEW);
+	CMenu *context = menu.GetSubMenu(0);
+
+	if (m_wordWrap) {
+		edit.SetTargetDevice(NULL, 1);
+		m_wordWrap = false;
+	}
+	else {
+		edit.SetTargetDevice(NULL, 0);
+		m_wordWrap = true;
 	}
 }
 

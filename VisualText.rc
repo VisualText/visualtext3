@@ -1322,6 +1322,7 @@ BEGIN
     POPUP "&Text"
     BEGIN
         MENUITEM "View Tree of Selected",       ID_TEXT_DISPLAYTREE
+        MENUITEM "Wordwrap On",                 ID_TEXT_WORDWRAPON
         MENUITEM SEPARATOR
         MENUITEM "&Find Selected Text ",        ID_TEXT_FINDLOCAL
         MENUITEM "Find &Again",                 ID_TEXT_FINDAGAIN
@@ -2071,7 +2072,7 @@ BEGIN
             VALUE "FileDescription", "VisualText MFC Application"
             VALUE "FileVersion", "3.1.0.0"
             VALUE "InternalName", "VisualText"
-            VALUE "LegalCopyright", "Copyright © 1999-2017"
+            VALUE "LegalCopyright", "Copyright © 1999-2018"
             VALUE "OriginalFilename", "VisualText.EXE"
             VALUE "ProductName", "VisualText IDE"
             VALUE "ProductVersion", "3.1.0.0"
@@ -3402,6 +3403,7 @@ END
 STRINGTABLE
 BEGIN
     ID_CLEAR_URL            "Clear URLs"
+    ID_TEXT_WORDWRAPON      "Toggle word wrap display"
 END
 
 STRINGTABLE

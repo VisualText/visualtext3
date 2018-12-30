@@ -72,7 +72,7 @@ void ANLZ_GetStrTime(CString& strTime, DWORD ms);
 
 _TCHAR *AlgoStrings[] = {
 	_T("none"),
-	_T("pat"),
+	_T("nlp"),
 	_T("system"),
 	_T("stub"),
 	_T("end"),
@@ -210,26 +210,6 @@ BEGIN_MESSAGE_MAP(CTreeViewAnalyzer, CPaneView)
 	ON_COMMAND(ID_SEQUENCEMENU_EDITVIEW, OnSequencemenuEditview)
 	ON_COMMAND(ID_SEQUENCEMENU_VIEWFULLTREE, OnSequencemenuViewfulltree)
 	ON_COMMAND(ID_SEQUENCEMENU_HELP, OnSequencemenuHelp)
-	ON_NOTIFY_REFLECT(TVN_ENDLABELEDIT, OnEndlabeledit)
-	ON_NOTIFY_REFLECT(TVN_BEGINLABELEDIT, OnBeginlabeledit)
-	ON_COMMAND(ID_SEQUENCEMENU_VIEWLOG, OnSequencemenuViewlog)
-	ON_COMMAND(ID_SEQUENCEMENU_SERVERARCHIVES, OnSequencemenuServerarchives)
-	ON_COMMAND(ID_SEQUENCEMENU_UPLOADRULES, OnSequencemenuUploadrules)
-	ON_COMMAND(ID_SEQUENCEMENU_ARCHIVERULES, OnSequencemenuArchiverules)
-	ON_COMMAND(ID_SEQUENCEMENU_LOCALARCHIVES, OnSequencemenuLocalarchives)
-	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_DELETE, OnUpdateSequencemenuDelete)
-	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_EDITRULES, OnUpdateSequencemenuEditrules)
-	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_VIEWLOG, OnUpdateSequencemenuViewlog)
-	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_VIEWFULLTREE, OnUpdateSequencemenuViewfulltree)
-	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_ARCHIVERULES, OnUpdateSequencemenuArchiverules)
-	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_UPLOADRULES, OnUpdateSequencemenuUploadrules)
-	ON_COMMAND(ID_SEQUENCEMENU_HIGHLIGHTMATCHES, OnSequencemenuHighlightmatches)
-	ON_COMMAND(ID_SEQUENCEMENU_VIEWENTIRETREE, OnSequencemenuViewentiretree)
-	ON_COMMAND(ID_SEQUENCEMENU_PROPERTIES, OnSequencemenuProperties)
-	ON_NOTIFY_REFLECT(TVN_BEGINDRAG, OnBegindrag)
-	ON_WM_MOUSEMOVE()
-	ON_WM_LBUTTONUP()
-	ON_WM_TIMER()
 	ON_COMMAND(ID_SEQUENCEMENU_VIEWTREEMATCHES, OnSequencemenuViewtreematches)
 	ON_COMMAND(ID_SEQUENCEMENU_VIEWCONCEPTTREE, OnSequencemenuViewconcepttree)
 	ON_COMMAND(ID_SEQUENCEMENU_ADD_FOLDER, OnSequencemenuAddFolder)
@@ -239,9 +219,29 @@ BEGIN_MESSAGE_MAP(CTreeViewAnalyzer, CPaneView)
 	ON_COMMAND(ID_SEQUENCEMENU_ADD_TOPLEVEL_NEW, OnSequencemenuAddToplevelNew)
 	ON_COMMAND(ID_SEQUENCEMENU_ADD_TOPLEVEL_FOLDER, OnSequencemenuAddToplevelFolder)
 	ON_COMMAND(ID_SEQUENCEMENU_ADD_STUB, OnSequencemenuAddStub)
+	ON_COMMAND(ID_SEQUENCEMENU_VIEWLOG, OnSequencemenuViewlog)
+	ON_COMMAND(ID_SEQUENCEMENU_SERVERARCHIVES, OnSequencemenuServerarchives)
+	ON_COMMAND(ID_SEQUENCEMENU_UPLOADRULES, OnSequencemenuUploadrules)
+	ON_COMMAND(ID_SEQUENCEMENU_ARCHIVERULES, OnSequencemenuArchiverules)
+	ON_COMMAND(ID_SEQUENCEMENU_LOCALARCHIVES, OnSequencemenuLocalarchives)
+	ON_COMMAND(ID_SEQUENCEMENU_HIGHLIGHTMATCHES, OnSequencemenuHighlightmatches)
+	ON_COMMAND(ID_SEQUENCEMENU_VIEWENTIRETREE, OnSequencemenuViewentiretree)
+	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_DELETE, OnUpdateSequencemenuDelete)
+	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_EDITRULES, OnUpdateSequencemenuEditrules)
+	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_VIEWLOG, OnUpdateSequencemenuViewlog)
+	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_VIEWFULLTREE, OnUpdateSequencemenuViewfulltree)
+	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_ARCHIVERULES, OnUpdateSequencemenuArchiverules)
+	ON_UPDATE_COMMAND_UI(ID_SEQUENCEMENU_UPLOADRULES, OnUpdateSequencemenuUploadrules)
+	ON_NOTIFY_REFLECT(TVN_ENDLABELEDIT, OnEndlabeledit)
+	ON_NOTIFY_REFLECT(TVN_BEGINLABELEDIT, OnBeginlabeledit)
+	ON_NOTIFY_REFLECT(TVN_BEGINDRAG, OnBegindrag)
+	ON_WM_MOUSEMOVE()
+	ON_WM_LBUTTONUP()
+	ON_WM_TIMER()
 	ON_WM_KEYDOWN()
 
 	//}}AFX_MSG_MAP
+
 	ON_MESSAGE(WMU_ANALYZE_OUTPUT_MESSAGE, OnAnalyzeOutputMessage)
 	ON_MESSAGE(WMU_ANALYZE_OUTPUT_PASS_MESSAGE, OnAnalyzeOutputPassMessage)
 	ON_MESSAGE(WMU_POST_ANALYZE_FILE_TASKS, OnPostAnalyzeFileTasks)
@@ -256,6 +256,8 @@ BEGIN_MESSAGE_MAP(CTreeViewAnalyzer, CPaneView)
 	ON_COMMAND(ID_DELETE, OnDelete)
 	ON_COMMAND(ID_TREE_UP, OnMoveUp)
 	ON_COMMAND(ID_TREE_DOWN, OnMoveDown)
+	ON_COMMAND(ID_SEQUENCEMENU_CONVERTFILESTONLP, OnSequencemenuConvertFiles2Nlp)
+	ON_COMMAND(ID_SEQUENCEMENU_OPENSPECFOLDER, OnSequencemenuOpenSpecFolder)
 
 END_MESSAGE_MAP()
 
@@ -444,7 +446,7 @@ void CTreeViewAnalyzer::FillListWithSequence()
 		statusStr = _T("");
 		if (!active)
 			statusStr = _T("off");
-		algoStr = algo;
+		algoStr = lstrcmpi(algo, _T("pat")) == 0 ? _T("nlp") : algo;
 		dataStr = data;
 		commentStr = comment;
 		commentStr.TrimLeft();
@@ -459,7 +461,7 @@ void CTreeViewAnalyzer::FillListWithSequence()
 			}
 
 		CString rulesPathStr = RulesPath(passStr);
-		if (algoStr == _T("pat") && !FileExists(rulesPathStr))
+		if ((algoStr == _T("nlp") || algoStr == _T("pat")) && !FileExists(rulesPathStr))
 			mainFrm->AddAnalyzerLine(_T("ERROR>>> no analyzer file"),passStr);
 
 		// ADD CONCEPT TO KB
@@ -613,7 +615,7 @@ CDocument *CTreeViewAnalyzer::EditRulesFile(LPCTSTR lpRulesPath)
 {
 	CVisualTextDoc *doc = NULL;
 
-	if (lpRulesPath || (m_strAlgo == _T("pat") || m_strAlgo == _T("rec")) && m_strData != _T("")) {
+	if (lpRulesPath || (m_strAlgo == _T("nlp") || m_strAlgo == _T("pat") || m_strAlgo == _T("rec")) && m_strData != _T("")) {
 		CString rulesPathStr = lpRulesPath ? lpRulesPath : PassPathStr();
 
 		if (rulesPathStr != _T("")) {
@@ -652,8 +654,7 @@ CDocument *CTreeViewAnalyzer::EditRulesFile(LPCTSTR lpRulesPath)
 	return doc;
 }
 
-CString CTreeViewAnalyzer::PassPathStr(CONCEPT *concept, bool noExt, CString newNameStr,
-									   bool directoryFlag)
+CString CTreeViewAnalyzer::PassPathStr(CONCEPT *concept, bool noExt, CString newNameStr, bool directoryFlag)
 {
 	if (!concept)
 		concept = m_conceptSelected;
@@ -677,6 +678,8 @@ CString CTreeViewAnalyzer::PassPathStr(CONCEPT *concept, bool noExt, CString new
 	if (pathStr.GetAt(0) == '\\')
 		ClipLeft(pathStr,1);
 	CString rulesPathStr = RulesPath(pathStr,noExt);
+	CString rulesPathOldStr = RulesPath(pathStr, noExt, _T(".pat"));
+	if (FileExists(rulesPathOldStr)) return rulesPathOldStr;
 	return rulesPathStr;
 }
 
@@ -965,7 +968,7 @@ void CTreeViewAnalyzer::GetPassInfo(int passNum)
 
 		// SELECT CORRESPONDING GRAMMAR CONCEPT
 		// REMOVE THIS.  TOO TIGHTLY COUPLED  99/12/08 DD
-		//if (m_strAlgo == "pat")
+		//if (m_strAlgo == "nlp" || m_strAlgo == "pat")
 			//wnd->SelectGrammarConcept(m_strData);
 
 		// HIGHLIGHT IF TOGGLE ON, TEXT PROCESSED, AND TEXT VISIBLE
@@ -1014,10 +1017,10 @@ void CTreeViewAnalyzer::AddExistingPass(CString filePathStr)
 		int max = strFiles.GetSize();
 		for (int n = max - 1; n >= 0; --n) { // To preserve picked order...
 			filePathStr = strFiles.GetAt(n);
-			if (EndsWith(filePathStr,_T("pat"))) {
+			if (EndsWith(filePathStr, _T("_nlp")) || EndsWith(filePathStr, _T("_pats"))) {
 				AddExistingPassFile(filePathStr);
 			}
-			else if (IsDirectory(filePathStr) && EndsWith(filePathStr,_T("_pats"))) {
+			else if (IsDirectory(filePathStr) && (EndsWith(filePathStr,_T("_nlp")) || EndsWith(filePathStr, _T("_pats")))) {
 				CStringList dirFiles;
 				DirectoryFiles(dirFiles,filePathStr,true);
 				SortStringList(dirFiles);
@@ -1056,7 +1059,7 @@ void CTreeViewAnalyzer::AddExistingPassFile(CString filePathStr, bool editLabelF
 			return;
 	}
 	CopyFile(filePathStr,fullRuleNamePathStr,false);
-	InsertPass(_T("pat"), ruleName, _T("comment"), true, true, editLabelFlag, renumberFlag);
+	InsertPass(_T("nlp"), ruleName, _T("comment"), true, true, editLabelFlag, renumberFlag);
 }
 
 void CTreeViewAnalyzer::RemovePassOrder(CString &passNameStr)
@@ -1383,7 +1386,7 @@ void CTreeViewAnalyzer::OnSequencemenuDuplicate()
 	CopyFile(oldFile,newFile,false);
 	CString commentStr = _T("Copy of ");
 	commentStr += m_strData;
-	InsertPass(_T("pat"),m_strData2,commentStr,true);
+	InsertPass(_T("nlp"),m_strData2,commentStr,true);
 }
 
 void CTreeViewAnalyzer::OnSequencemenuNew() 
@@ -1391,11 +1394,11 @@ void CTreeViewAnalyzer::OnSequencemenuNew()
 	bool prevDirtyFlag = m_dirtyFlag;
 	CMainFrame *wnd = (CMainFrame *)AfxGetMainWnd();
 	if (appBoolAnalyzerLoaded) {
-		InsertPass(_T("pat"),_T("unnamed"),_T("comment"),true);	// 08/08/03 AM.
+		InsertPass(_T("nlp"),_T("unnamed"),_T("comment"),true);	// 08/08/03 AM.
 	}
 	else if (wnd->AnalyzerCreated()) {
 		InitAnalyzer();
-		InsertPass(_T("pat"),_T("unnamed"),_T("comment"),true);	// 08/08/03 AM.
+		InsertPass(_T("nlp"),_T("unnamed"),_T("comment"),true);	// 08/08/03 AM.
 	}
 
 	if (!SequenceProperties()) {
@@ -1450,7 +1453,7 @@ bool CTreeViewAnalyzer::GetLogFile(int pass, CString &logPathStr, bool force, bo
 			 m_strAlgo == _T("dicttokz") ||      // 08/16/11 AM.
 			 m_strAlgo == _T("dicttok") ||       // 08/09/11 AM.
 			 m_strAlgo == _T("cmltokenize") ||   // 08/09/11 AM.
-		   ((m_strAlgo == _T("pat") || m_strAlgo == _T("rec")) && m_strData != _T(""))))) {
+		   ((m_strAlgo == _T("nlp") || m_strAlgo == _T("pat") || m_strAlgo == _T("rec")) && m_strData != _T(""))))) {
 
 		if (IsDirectory(logFilePathStr)) {
 			logPathStr = OutAnaPath(logFilePathStr,pass);
@@ -2079,7 +2082,7 @@ void CTreeViewAnalyzer::SetPassDirty(CString rulePathStr)
 		m_dirtyFlag = true;
 		m_dirtyFileFlag = true;
 	}
-	else if (EndsWith(rulePathStr,_T("pat"))) {
+	else if (EndsWith(rulePathStr,_T("nlp")) || EndsWith(rulePathStr, _T("pat"))) {
 		CString ruleStr = StripPath(rulePathStr,0);
 		ClipRight(ruleStr,4);
 		int pass = PassFromFile(ruleStr) + 1;
@@ -2768,7 +2771,7 @@ void CTreeViewAnalyzer::ImageFromType(ANAL_PASS_TYPE type, bool activeFlag,
 void CTreeViewAnalyzer::ImageType(CString algoStr, int &image, int &imageSelected,
 								  ANAL_PASS_TYPE &type)
 {
-	if (algoStr == _T("pat")) {
+	if (algoStr == _T("nlp") || algoStr == _T("pat")) {
 		image = 0;
 		imageSelected = 1;
 		type = ANAL_PASS_PAT;
@@ -2891,6 +2894,7 @@ void CTreeViewAnalyzer::OnUpdateSequencemenuUploadrules(CCmdUI* pCmdUI)
 	pCmdUI->Enable(appBoolAnalyzerLoaded);	
 }
 
+
 void CTreeViewAnalyzer::OnRButtonDown(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	CPoint point, ptScreen;
@@ -2959,6 +2963,9 @@ void CTreeViewAnalyzer::OnRButtonDown(NMHDR* pNMHDR, LRESULT* pResult)
 		}
 	}
 
+	if (!AnyFilesHaveExtension(_T("pat"), RulesPath())) {
+		disables[count++] = ID_SEQUENCEMENU_CONVERTFILESTONLP;
+	}
 	
 	if (m_passType != ANAL_PASS_PAT && m_passType != ANAL_PASS_REC &&
 		m_passType != ANAL_PASS_FOLDER) {
@@ -3034,7 +3041,7 @@ void CTreeViewAnalyzer::OnRButtonDown(NMHDR* pNMHDR, LRESULT* pResult)
 		patsDir = false;
 
 		fileStr = StripPath(fullPathStr,0);
-		if (EndsWith(fileStr,_T(".pat")))
+		if (EndsWith(fileStr,_T(".nlp"))|| EndsWith(fileStr, _T(".nlp")))
 			ClipRight(fileStr,4);
 		CString niceStr = SeparateByCaps(fileStr);
 
@@ -3085,6 +3092,16 @@ void CTreeViewAnalyzer::OnSequencemenuAddStub()
 	CMainFrame *wnd = (CMainFrame *)AfxGetMainWnd();
 	if (wnd->AnalyzerCreated() && AskForText(_T("Enter stub name:")))
 		theApp.m_pMainFrame->m_wndAnalyzerView.AddStub(appAskText);
+}
+
+void CTreeViewAnalyzer::OnSequencemenuConvertFiles2Nlp()
+{
+	ChangeFilesExtensions(RulesPath(), _T("pat"), _T("nlp"));
+}
+
+void CTreeViewAnalyzer::OnSequencemenuOpenSpecFolder()
+{
+	ShellExecute(0, _T("open"), RulesPath(), NULL, NULL, SW_NORMAL);
 }
 
 void CTreeViewAnalyzer::AddStub(CString stubNameStr, bool addAfterFlag) 
@@ -3550,7 +3567,7 @@ void CTreeViewAnalyzer::AddMain(CONCEPT *conceptParent, HTREEITEM itemParent)
 		// ADD TO KB
 		mainConcept = cg->makeConcept(conceptParent,MAINSTR,1);
 //		kbDirty = true;
-		KBReplaceValue(mainConcept,_T("algo"),_T("pat"),false);
+		KBReplaceValue(mainConcept,_T("algo"),_T("nlp"),false);
 		KBReplaceValue(mainConcept,_T("data"),MAINSTR,false);
 		
 		// ADD MAIN TO DISPLAY TREE

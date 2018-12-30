@@ -1037,7 +1037,7 @@ CDocument *CVisualTextApp::OpenNewDocument(const CString &strTarget, CString fil
 			}
 			else  {
 				int iconID = IDI_TEXT;
-				if (EndsWith(filePath, ".pat"))
+				if (EndsWith(filePath, ".nlp") || EndsWith(filePath, ".pat"))
 					iconID = IDI_PAT;
 				doc = (CVisualTextDoc *)pTemplate->CmyMultiDocTemplate::OpenDocumentFile((LPCTSTR)filePath,showFlag, iconID);
 				if (doc) {
@@ -1846,6 +1846,7 @@ void CVisualTextApp::DoAllViews(CView *activeView, CString docType, CString extS
 
 void CVisualTextApp::SaveAllStates() 
 {
+	DoAllViews(NULL,_T("SyntaxEditor"),_T(".nlp"),DOC_ACTION_SAVE_STATE);
 	DoAllViews(NULL,_T("SyntaxEditor"),_T(".pat"),DOC_ACTION_SAVE_STATE);
 	DoAllViews(NULL,_T("VisualText"),_T(""),DOC_ACTION_SAVE_STATE);
 	DoAllViews(NULL,_T("Browser"),_T(""),DOC_ACTION_SAVE_STATE);
@@ -3254,7 +3255,7 @@ bool CVisualTextApp::MovedPathStr(CString &pathStr)
 CString CVisualTextApp::TemplateFromExtension(LPCTSTR lpszFileName)
 {
 	CString templateName = _T("VisualText");
-	if (EndsWith(lpszFileName, ".pat")) templateName = _T("SyntaxEditor");
+	if (EndsWith(lpszFileName, ".nlp") || EndsWith(lpszFileName, ".pat")) templateName = _T("SyntaxEditor");
 	return templateName;
 }
 

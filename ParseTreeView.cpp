@@ -1382,7 +1382,7 @@ void CParseTreeView::ViewRuleFired()
 		if (FileExists(dirPathStr)) {
 			//if (!(doc = theApp.IsVisualTextDocumentOpen("VisualText",dirPathStr)))
 			// IF PASS FILE, MOVE TO ANALYZER TAB AND SELECT PASS
-			if (EndsWith(dirPathStr,_T("pat")))
+			if (EndsWith(dirPathStr,_T("nlp")) || EndsWith(dirPathStr, _T("pat")))
 				theApp.m_pMainFrame->m_wndAnalyzerView.EditRulesFile(dirPathStr); // SRP 010606, for Pass File Number in Doc Title Bar
 
 			CSyntaxEditorDoc* doc = (CSyntaxEditorDoc *)theApp.OpenNewDocument(_T("SyntaxEditor"),dirPathStr);

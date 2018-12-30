@@ -866,6 +866,7 @@ void CVisualTextView::SerializePublic(CArchive& ar)
 
 void CVisualTextView::OnSaveAll() 
 {
+	theApp.DoAllViews(NULL,_T("VisualText"),_T(".nlp"),DOC_ACTION_SAVE);
 	theApp.DoAllViews(NULL,_T("VisualText"),_T(".pat"),DOC_ACTION_SAVE);
 	theApp.DoAllViews(NULL,_T("VisualText"),_T(".txt"),DOC_ACTION_SAVE);
 	theApp.DoAllViews(NULL,_T("VisualText"),_T(".htm"),DOC_ACTION_SAVE);  // 07/15/06 AM.

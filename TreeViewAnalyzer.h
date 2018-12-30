@@ -209,6 +209,8 @@ protected:
 	afx_msg void OnChooseSpec(UINT idIn);
 	afx_msg void OnChooseSpec2(UINT idIn);
 	afx_msg void OnRButtonDown(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnSequencemenuConvertFiles2Nlp();
+	afx_msg void OnSequencemenuOpenSpecFolder();
 	DECLARE_MESSAGE_MAP()
 	
 private:

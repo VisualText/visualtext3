@@ -146,7 +146,7 @@ DOC_TYPE CVisualTextDoc::DocumentTypeFromFile(const CString &path)
 		else if (EndsWith(path,_T("seq"))) {
 			m_DocType = DOC_SEQUENCE;
 		}
-		else if (EndsWith(path,_T("pat"))) {
+		else if (EndsWith(path,_T("pat")) || EndsWith(path, _T("nlp"))) {
 			m_DocType = DOC_RULE;
 		}
 		else if (EndsWith(path,_T("rec"))) {

@@ -1826,7 +1826,7 @@ void CSyntaxEditorView::OnRulefileFind()
 
 void CSyntaxEditorView::OnRulefileCloseall() 
 {
-	theApp.DoAllViews(this,_T("VisualText"),_T("pat"),DOC_ACTION_DESTROY_ALL_BUT);
+	theApp.DoAllViews(this,_T("VisualText"),_T("nlp"),DOC_ACTION_DESTROY_ALL_BUT);
 }
 
 void CSyntaxEditorView::OnRulefileSaverunlog() 

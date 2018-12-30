@@ -95,7 +95,7 @@ void ListCtrlWMenuLog::FindInAnalyzerTab()
 			else
 				dirPathStr = wnd->GetProcessTextFile(fileStr);
 		}
-		else if (FileHasExtension(fileStr,"pat"))
+		else if (FileHasExtension(fileStr,"nlp") || FileHasExtension(fileStr, "pat"))
 			dirPathStr = RulesPath(fileStr,true);
 		else if (FileHasExtension(fileStr,"txt"))
 			dirPathStr = InputPath(fileStr);

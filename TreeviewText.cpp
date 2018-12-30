@@ -2220,7 +2220,7 @@ CONCEPT *CTreeViewText::ConceptFromTextPath(CString pathStr, bool fromGuiFlag)
 		while (con && pos && (conceptStr = conStrList.GetNext(pos))) {
 			if (conceptStr == _T(""))
 				continue;
-			if (EndsWith(conceptStr,_T(".pat")))
+			if (EndsWith(conceptStr,_T(".nlp")) || EndsWith(conceptStr, _T(".pat")))
 				ClipRight(conceptStr,4);
 			StringToChar(nameBuff,conceptStr,1000);
 			con = cg->findConcept(con,nameBuff);

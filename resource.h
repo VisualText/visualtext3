@@ -1066,6 +1066,8 @@
 #define ID_VIEW_EDITOROPTIONS           33000
 #define ID_VIEW_OPTIONS                 33001
 #define ID_VIEW_OPTIONS33003            33003
+#define ID_SEQUENCEMENU_CONVERTFILESTONLP 33004
+#define ID_SEQUENCEMENU_OPENSPECFOLDER  33005
 #define IDC_BAR_OUTPUT                  59580
 #define IDC_BAR_WORKSPACE               59581
 #define IDC_BAR_WATCH                   59582
@@ -1091,7 +1093,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        2822
-#define _APS_NEXT_COMMAND_VALUE         33004
+#define _APS_NEXT_COMMAND_VALUE         33006
 #define _APS_NEXT_CONTROL_VALUE         1017
 #define _APS_NEXT_SYMED_VALUE           101
 #endif

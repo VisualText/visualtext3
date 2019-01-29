@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VisualStudio2012", ".\VisualStudio2012_vc100.vcxproj", "{65492589-4784-1279-1351-797658449842}"
+EndProject

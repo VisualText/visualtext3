@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ista"", ".\Vista_vc110.vcxproj", "{58812863-4771-8552-5118-619494526388}"
+EndProject

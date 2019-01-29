@@ -58,7 +58,7 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 CString appStrVersion;
-CString appStrCopyright = _T("VisualText® Copyright © 1999 - 2017 Text Analysis International, Inc.  All rights reserved. NLP++® Copyright © 2000 - 2017 Text Analysis International, Inc.  All rights reserved.Conceptual Grammar™ Copyright © 1999 - 2017 Text Analysis International, Inc.  All rights reserved. Patents Pending");
+CString appStrCopyright = _T("VisualText® Copyright © 1999 - 2019 Text Analysis International, Inc.  All rights reserved. NLP++® Copyright © 2000 - 2019 Text Analysis International, Inc.  All rights reserved.Conceptual Grammar™ Copyright © 1999 - 2019 Text Analysis International, Inc.  All rights reserved. Patents Pending");
 CString appStrCopyright2 = _T("Contains WordNet 2.0 Copyright © 1997 by Princeton University. All rights reserved. -- THE WORDNET SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.");
 
 CString appAnaFilePathStr = _T("");

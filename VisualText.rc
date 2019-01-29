@@ -2071,7 +2071,7 @@ BEGIN
             VALUE "FileDescription", "VisualText MFC Application"
             VALUE "FileVersion", "3.1.0.0"
             VALUE "InternalName", "VisualText"
-            VALUE "LegalCopyright", "Copyright © 1999-2017"
+            VALUE "LegalCopyright", "Copyright © 1999-2019"
             VALUE "OriginalFilename", "VisualText.EXE"
             VALUE "ProductName", "VisualText IDE"
             VALUE "ProductVersion", "3.1.0.0"

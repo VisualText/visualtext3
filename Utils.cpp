@@ -120,7 +120,7 @@ bool InitFile(const CString &filePath, const CString &fileName, const CString &s
 	CString authorNameStr = theApp.GetProfileString(_T("PREFERENCES"),_T("AUTHORNAME"),_T(""));
 
 	contentStr += _T("###############################################\n");
-	contentStr += _T("# FILE: ") + fileName + _T(".pat\n");
+	contentStr += _T("# FILE: ") + fileName + _T(".nlp\n");
 	contentStr += _T("# SUBJ: ") + subjectStr + _T("\n");
 	contentStr += _T("# AUTH: ") + authorNameStr + _T("\n");
 	contentStr += _T("# CREATED: ") + dateStr + _T("\n");
@@ -545,16 +545,16 @@ CString LogsPathRel(const CString &fileName, const CString &extStr) // 05/19/01 
 	return AppPathRel(_T("logs"),fileName, extStr); // 05/19/01 AM.
 }
 
-CString RulesPath(const CString &fileName, const bool noExt)
+CString RulesPath(const CString &fileName, const bool noExt, const CString &extStr)
 {
 	if (noExt || fileName == _T("")) return AppPath(_T("spec"),fileName);
-	return AppPath(_T("spec"),fileName) + _T(".pat");
+	return AppPath(_T("spec"),fileName) + extStr;
 }
 
 CString RulesPathRel(const CString &fileName, const bool noExt)
 {
 	if (noExt || fileName == _T("")) return AppPathRel(_T("spec"),fileName);
-	return AppPathRel(_T("spec"),fileName) + _T(".pat");
+	return AppPathRel(_T("spec"),fileName) + _T(".nlp");
 }
 
 bool MakeDirectory(const CString &dirPathStr)
@@ -838,6 +838,65 @@ bool IsDirectoryEmpty(const CString &pathStr)
 	finder.Close();
 
 	return true;
+}
+
+BOOL AnyFilesHaveExtension(const CString &extStr, const CString &pathStr)
+{
+	CFileFind finder;
+	return finder.FindFile(pathStr + _T("\\*.") + extStr);
+}
+
+BOOL ChangeFilesExtensions(const CString &pathStr, const CString &fromExtStr, const CString &toExtStr)
+{
+	CFileFind finder;
+	BOOL found = finder.FindFile(pathStr + _T("\\*.") + fromExtStr);
+	int count = 0;
+	CString fileName;
+
+	while (found) {
+		found = finder.FindNextFile();
+		fileName = finder.GetFileName();
+		if (fileName == _T(".") || fileName == _T("..") || finder.IsDirectory())
+			continue;
+		count++;
+	}
+	if (count == 0) {
+		AfxMessageBox(_T("No files to convert"));
+		return true;
+	}
+
+	CString msgStr;
+	msgStr.Format(_T("Do you want to rename the %i *.pat files to *.nlp?"), count);
+	if (AfxMessageBox(msgStr, MB_YESNO) != IDYES) return false;
+
+	CString fromFilePath = _T("");
+	CString toFilePath = _T("");
+	BOOL renamed = false;
+	CMainFrame *mainFrm = (CMainFrame *)AfxGetMainWnd();
+	found = finder.FindFile(pathStr + _T("\\*.") + fromExtStr);
+
+	while (found) {
+		found = finder.FindNextFile();
+		fileName = finder.GetFileName();
+		if (fileName == _T(".") || fileName == _T("..") || finder.IsDirectory())
+			continue;
+
+		fromFilePath = pathStr + _T("\\") + fileName;
+		toFilePath = pathStr + _T("\\") + finder.GetFileTitle() + _T(".") + toExtStr;
+
+		if (!FileExists(toFilePath) && !UTL_Rename(fromFilePath, toFilePath)) {
+			break;
+		}
+		msgStr.Format(_T("%s => %s"),fromFilePath, finder.GetFileTitle() + _T(".") + toExtStr);
+		mainFrm->AddDebugLine(_T("Renamed:"), msgStr);
+
+		renamed = true;
+		break;
+	}
+
+	finder.Close();
+
+	return renamed;
 }
 
 void DirectoryFiles(CStringList &files, const CString &pathStr, const bool fullPath,

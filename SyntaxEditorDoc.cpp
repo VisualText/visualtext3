@@ -146,7 +146,7 @@ void CSyntaxEditorDoc::SetTitle(LPCTSTR lpszTitle)
 	m_boolCurrentAnalyzerPassFile = pathNameStr.Find(inputPathStr,0) == 0 ? true : false;
 
 	CString titleStr = lpszTitle;
-	if (EndsWith(titleStr,_T(".pat")))
+	if (EndsWith(titleStr,_T(".nlp")) || EndsWith(titleStr, _T(".pat")))
 		ClipRight(titleStr,4);
 
 	CMainFrame *wnd = (CMainFrame *)AfxGetMainWnd();

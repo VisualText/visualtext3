@@ -1329,7 +1329,7 @@ int CMainFrame::FindWordInFile(CString dirPathStr, CString fileName, CString sel
 		fileStr.Format(_T("File: %s [%d %d]:"),RelativizePath(fullPathStr),lineNum, inLineIndex);
 
 		// ADD PASS NUMBER FOR ANALYZER PASS
-		if (EndsWith(fullPathStr,_T("pat"))) {
+		if (EndsWith(fullPathStr,_T("nlp")) || EndsWith(fullPathStr, _T("pat"))) {
 			CString str = fileName;
 			ClipRight(str,4);
 			int pass = m_wndAnalyzerView.PassFromFile(str);
@@ -1459,7 +1459,8 @@ void CMainFrame::RunAnalyzer(CString textPathStr)
 
 void CMainFrame::OnSaveAll() 
 {
-	theApp.DoAllViews(NULL,_T("SyntaxEditor"),_T(".pat"),DOC_ACTION_SAVE);
+	theApp.DoAllViews(NULL,_T("SyntaxEditor"),_T(".nlp"),DOC_ACTION_SAVE);
+	theApp.DoAllViews(NULL,_T("SyntaxEditor"), _T(".pat"), DOC_ACTION_SAVE);
 	theApp.DoAllViews(NULL,_T("VisualText"),_T(".txt"),DOC_ACTION_SAVE);
 	theApp.DoAllViews(NULL,_T("VisualText"),_T(".htm"),DOC_ACTION_SAVE);  // 07/15/06 AM.
 	theApp.DoAllViews(NULL,_T("VisualText"),_T(".html"),DOC_ACTION_SAVE); // 07/15/06 AM.
@@ -1526,7 +1527,7 @@ int CMainFrame::FindWordInRuleFiles(CString selStr, CString dirPathStr, bool noC
 		CString dirFindPathStr;
 		if (dirPathStr == _T(""))
 			dirFindPathStr = RulesPath();
-		total += FindWordInSequenceFiles(selStr,dirFindPathStr,_T("pat"),noCase); // SRP 010705
+		total += FindWordInSequenceFiles(selStr,dirFindPathStr,_T("nlp"),noCase); // SRP 010705
 	}
 
 	return total;
@@ -1551,7 +1552,7 @@ int CMainFrame::FindWordInOtherRuleFiles(CString selStr, CString dirPathStr, boo
 				while (pos && (dirStr = directories.GetNext(pos))) {
 					dirFindPathStr = appStrAppsDirectory;
 					dirFindPathStr += _T("\\") + dirStr + _T("\\spec");
-					total += FindWordInDirectoryFiles(selStr,dirFindPathStr,_T("pat"),noCase); // SRP 010705
+					total += FindWordInDirectoryFiles(selStr,dirFindPathStr,_T("nlp"),noCase); // SRP 010705
 				}
 				return total;
 			}
@@ -1561,7 +1562,7 @@ int CMainFrame::FindWordInOtherRuleFiles(CString selStr, CString dirPathStr, boo
 				dirFindPathStr += _T("\\") + dirPathStr + _T("\\spec");
 			}
 		}
-		total += FindWordInDirectoryFiles(selStr,dirFindPathStr,_T("pat"),noCase); // SRP 010705
+		total += FindWordInDirectoryFiles(selStr,dirFindPathStr,_T("nlp"),noCase); // SRP 010705
 	}
 
 	return total;
@@ -1846,7 +1847,7 @@ void CMainFrame::GenAnalyzer(GRAM_GEN_TYPE type, bool askConfirm)
 {
 	CTreeViewGrammar *view = &(theApp.m_pMainFrame->m_wndGrammarView);
 	view->GenerateAnalyzer(type,askConfirm);
-	theApp.DoAllViews(NULL,_T("VisualText"),_T("pat"),DOC_ACTION_UPDATE_AUTO_GENERATED);
+	theApp.DoAllViews(NULL,_T("VisualText"),_T("nlp"),DOC_ACTION_UPDATE_AUTO_GENERATED);
 }
 
 BOOL CMainFrame::OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult) 

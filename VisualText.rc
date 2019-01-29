@@ -996,6 +996,8 @@ BEGIN
             MENUITEM "View &Remote",                ID_SEQUENCEMENU_SERVERARCHIVES
         END
         MENUITEM "&Properties",                 ID_SEQUENCEMENU_PROPERTIES
+        MENUITEM "Open spec folder",            ID_SEQUENCEMENU_OPENSPECFOLDER
+        MENUITEM "&Convert files to nlp",       ID_SEQUENCEMENU_CONVERTFILESTONLP
         MENUITEM SEPARATOR
         MENUITEM "&Help",                       ID_SEQUENCEMENU_HELP
     END

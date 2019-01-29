@@ -441,7 +441,7 @@
       <AdditionalDependencies>wininet.lib;version.lib;litedu.lib;htmlhelp.lib;libconshdu.lib;libprimdu.lib;libstreamdu.lib;XT4100Libud.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Unicode_Debug/VisualText.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>lib;..\vtcore-vs\lite\Unicode_Debug;..\vtcore-vs\cs\libprim\Unicode_Debug;..\vtcore-vs\cs\libkbm\Unicode_Debug;..\vtcore-vs\cs\libconsh\Unicode_Debug;..\vtcore-vs\cs\libStream\Unicode_Debug;..\src\words\Unicode_Debug;..\src\web\Unicode_Debug;..\wn\Unicode_Debug;..\vtcore-vs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>lib;..\vtcore-vs\lite\Unicode_Debug;..\vtcore-vs\cs\libprim\Unicode_Debug;..\vtcore-vs\cs\libkbm\Unicode_Debug;..\vtcore-vs\cs\libconsh\Unicode_Debug;..\vtcore-vs\cs\libstream\Unicode_Debug;..\src\words\Unicode_Debug;..\src\web\Unicode_Debug;..\wn\Unicode_Debug;..\vtcore-vs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Unicode_Debug/VisualText.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>

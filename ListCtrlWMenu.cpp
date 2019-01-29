@@ -92,7 +92,7 @@ void ListCtrlWMenu::FindInFindTab()
 			//if (!(doc = theApp.IsVisualTextDocumentOpen("VisualText",dirPathStr)))
 			// IF PASS FILE, MOVE TO ANALYZER TAB AND SELECT PASS
 
-			if (EndsWith(fileStr,_T("pat"))) {
+			if (EndsWith(fileStr,_T("nlp")) || EndsWith(fileStr, _T("pat"))) {
 				doc = theApp.m_pMainFrame->m_wndAnalyzerView.EditRulesFile(dirPathStr); // SRP 010606, for Pass File Number in Doc Title Bar
 				CSyntaxEditorView *view = (CSyntaxEditorView *)GetFirstView(doc);
 				CXTPSyntaxEditCtrl &edit = view->GetEditCtrl();

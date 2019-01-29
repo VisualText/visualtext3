@@ -172,7 +172,7 @@ CString CPassPropertiesDlg::StringFromType(ANAL_PASS_TYPE type)
 ANAL_PASS_TYPE CPassPropertiesDlg::TypeFromString(CString typeStr)
 {
 	ANAL_PASS_TYPE type = ANAL_PASS_NONE;
-	if (typeStr == _T("pat"))
+	if (typeStr == _T("nlp") || typeStr == _T("pat"))
 		type = ANAL_PASS_PAT;
 	else if (typeStr == _T("rec"))
 		type = ANAL_PASS_REC;
